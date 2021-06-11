@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.UiInteractables
 {
-    public class DraggablePhoto : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+    public class DraggablePhoto : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         RectTransform rectTransform;
         Image image;
@@ -26,19 +26,10 @@ namespace Assets.Scripts.UiInteractables
             rectTransform.anchoredPosition += eventData.delta / CanvasHolder.Instance.Canvas.scaleFactor;
 
             if (!WallHolder.Instance.IsInside(image))
-            {
                 rectTransform.anchoredPosition = oldPos;
-                print("notinside");
-
-            }
-
         }
 
         public void OnEndDrag(PointerEventData eventData)
-        {
-        }
-
-        public void OnPointerDown(PointerEventData eventData)
         {
         }
     }
