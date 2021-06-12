@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using UnityEngine.UI.Extensions;
 
-namespace Assets.Scripts.UiInteractables
+namespace Assets.Scripts.Ui.Interactables
 {
     public class Line : MonoBehaviour
     {

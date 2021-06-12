@@ -1,11 +1,10 @@
-﻿using Assets.Scripts.Ui;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace Assets.Scripts.UiInteractables
+namespace Assets.Scripts.Ui.Interactables
 {
-    public class DraggablePhoto : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+    public class Draggable : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
     {
         RectTransform rectTransform;
         Image image;

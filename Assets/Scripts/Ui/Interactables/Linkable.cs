@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace Assets.Scripts.UiInteractables
+namespace Assets.Scripts.Ui.Interactables
 {
     public class Linkable : MonoBehaviour, IPointerDownHandler
     {
