@@ -23,6 +23,9 @@ namespace Assets.Scripts.Ui.Interactables
         public void SetTargetPostion(RectTransform targetPosition)
             => this.targetPosition = targetPosition;
 
+        public Vector2 MedianPoint()
+            => Vector2.Lerp(originPosition.position, targetPosition.position, 0.5f);
+
         private void Update()
         {
             if (originPosition == null)
@@ -30,7 +33,6 @@ namespace Assets.Scripts.Ui.Interactables
 
             var points = new Vector2[2];
             points[0] = originPosition.anchoredPosition + distanceFromPos;
-            print(points[0]);
 
             if (targetPosition != null)
                 points[1] = targetPosition.anchoredPosition + distanceFromPos;

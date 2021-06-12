@@ -1,7 +1,8 @@
-﻿using Assets.Scripts.Ui.Interactables;
+﻿using Assets.Scripts.Ui;
+using Assets.Scripts.Ui.Interactables;
 using UnityEngine;
 
-namespace Assets.Scripts.Ui.Menus
+namespace Assets.Scripts.Actions
 {
     public class LineCreator : MonoBehaviour
     {
@@ -35,6 +36,7 @@ namespace Assets.Scripts.Ui.Menus
         public void SetLineTarget(RectTransform targetPosition)
         {
             lineInstantiated.SetTargetPostion(targetPosition);
+            lineInstantiated.GetComponent<LineNoteCreator>().EnableNote();
             lineInstantiated = null;
         }
     }
