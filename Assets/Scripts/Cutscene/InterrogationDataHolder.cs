@@ -10,7 +10,7 @@ namespace Assets.Scripts.Cutscene
 
         private void Awake()
         {
-            interrogations = GetComponents<InterrogationData>();
+            interrogations = GetComponentsInChildren<InterrogationData>();
         }
 
         public bool HasOtherInterrogation() => currentInterrogation == interrogations.Length;

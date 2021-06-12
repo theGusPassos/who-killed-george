@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Cutscene.Data;
-using Assets.Scripts.UI.Text;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -17,10 +16,7 @@ namespace Assets.Scripts.Cutscene
         float timer;
 
         [SerializeField] Image characterFace;
-        [SerializeField] float timeToShowCharacterName;
         [SerializeField] TextMeshProUGUI characterNameMesh;
-        [SerializeField] float timeToStartTyping;
-        [SerializeField] TextTyper textTyper;
 
         private void Awake()
         {
@@ -38,6 +34,7 @@ namespace Assets.Scripts.Cutscene
         {
             StartCoroutine(FadeIn());
             StartCoroutine(ShowCharactersFace(characterData.sprite, characterData.name));
+            StartCoroutine(FadeOut(interrogationData.leads));
         }
 
         IEnumerator FadeIn()
@@ -70,10 +67,22 @@ namespace Assets.Scripts.Cutscene
             }
         }
 
-        IEnumerator TypeTextTyper()
+        // call after all texts
+        IEnumerator FadeOut(GameObject[] leads)
         {
-            yield return new WaitForSeconds(timeToStartTyping);
+            yield return new WaitForSeconds(timeToBackgroundFade + timeToFade);
+            LeadPlacer.Instance.PlaceLeads(leads);
 
+            while (canvasGroup.alpha > 0)
+            {
+                // reset
+                characterFace.color = new Color(characterFace.color.r, characterFace.color.g, characterFace.color.b, 0);
+                characterNameMesh.color = new Color(255, 255, 255, 0);
+
+                timer += Time.deltaTime;
+                canvasGroup.alpha = Mathf.Lerp(1, 0, timer / timeToBackgroundFade);
+                yield return new WaitForEndOfFrame();
+            }
         }
     }
 }

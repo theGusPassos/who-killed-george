@@ -8,17 +8,16 @@ namespace Assets.Scripts.Options
     public class InterrogateOption : MonoBehaviour, IPointerDownHandler
     {
         CharacterData characterData;
-        InterrogationData interrogationData;
+        [SerializeField] InterrogationDataHolder interrogationDataHolder;
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            InterrogationStarter.Instance.StartInterrogation(characterData, interrogationData);
+            InterrogationStarter.Instance.StartInterrogation(characterData, interrogationDataHolder.GetNext());
         }
 
         private void Awake()
         {
             characterData = GetComponentInParent<CharacterData>();
-            interrogationData = GetComponentInParent<InterrogationData>();
         }
     }
 }
