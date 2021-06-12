@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Ui.Holders;
+﻿using Assets.Scripts.Cutscene.Data;
+using Assets.Scripts.Ui.Holders;
 using Assets.Scripts.Ui.Interactables;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,7 +12,8 @@ namespace Assets.Scripts.Cutscene.Setters
         [SerializeField] float distance;
         [SerializeField] RectTransform reference;
 
-        List<GameObject> allPhotos;
+        List<GameObject> allPhotos = new List<GameObject>();
+        List<Evidence> allEvidences = new List<Evidence>();
 
         private void Awake()
         {
@@ -27,6 +29,7 @@ namespace Assets.Scripts.Cutscene.Setters
                 var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
                 photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
                 allPhotos.Add(photoPlaced);
+                allEvidences.Add(photoPlaced.GetComponent<EvidenceType>().evidence);
             }
         }
 
@@ -35,13 +38,18 @@ namespace Assets.Scripts.Cutscene.Setters
             var list = photos;
             for (var i = 0; i < list.Length; i++)
             {
+                var evidence = list[i].GetComponent<EvidenceType>().evidence;
+                if (allEvidences.Contains(evidence))
+                    return;
+
                 var d = new Vector3(distance * i, 0) + reference.position;
                 var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
                 photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
                 allPhotos.Add(photoPlaced);
+                allEvidences.Add(evidence);
             }
 
-                LeadPlacer.Instance.PlaceLeads(photos);
+            LeadPlacer.Instance.PlaceLeads(photos);
         }
 
         public void DestroyAllPhotos()

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774732654}
-  - component: {fileID: 774732655}
   m_Layer: 8
   m_Name: Interrogation Buttons
   m_TagString: Untagged
@@ -25,26 +24,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774732653}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 256, y: -59.769775, z: 240.08911}
+  m_LocalPosition: {x: 256, y: 241.5, z: 240.08911}
   m_LocalScale: {x: 1.2047058, y: 1.1088973, z: 2}
   m_Children:
   - {fileID: 1118368006}
   m_Father: {fileID: 1132034008038503144}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &774732655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774732653}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38846ad121981804fbf256a03b7465ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lineOrigin: {fileID: 1132034008038503144}
 --- !u!1 &846845109
 GameObject:
   m_ObjectHideFlags: 0
@@ -61,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &846845110
 RectTransform:
   m_ObjectHideFlags: 0
@@ -110,6 +96,7 @@ GameObject:
   - component: {fileID: 1118368006}
   - component: {fileID: 1118368009}
   - component: {fileID: 1118368008}
+  - component: {fileID: 1118368007}
   m_Layer: 8
   m_Name: Link Button
   m_TagString: Untagged
@@ -188,6 +175,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1118368007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118368005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38846ad121981804fbf256a03b7465ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lineOrigin: {fileID: 1132034008038503144}
 --- !u!1 &1742125441
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,122 +399,213 @@ MonoBehaviour:
     e2: 1
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 0
     e2: 2
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 0
     e2: 3
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 0
     e2: 4
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 0
     e2: 5
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 0
+    e2: 6
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 1
     e2: 0
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 1
     e2: 2
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 1
     e2: 3
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 1
     e2: 4
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 1
     e2: 5
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 1
+    e2: 6
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 2
     e2: 0
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 2
     e2: 1
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 2
     e2: 3
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 2
     e2: 4
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 2
     e2: 5
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 2
+    e2: 6
+    text: kekw
+    objectWithEffects: {fileID: 1132034008038503145}
+    leads:
+    - {fileID: 1132034008038503145}
   - e1: 3
     e2: 0
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 3
     e2: 1
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 3
     e2: 2
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 3
     e2: 4
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 3
     e2: 5
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 3
+    e2: 6
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 4
     e2: 0
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 4
     e2: 1
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 4
     e2: 2
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 4
     e2: 3
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 4
     e2: 5
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 4
+    e2: 6
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 5
     e2: 0
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 5
     e2: 1
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 5
     e2: 2
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 5
     e2: 3
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
   - e1: 5
     e2: 4
     text: write on me :)
     objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 5
+    e2: 6
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 6
+    e2: 0
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 6
+    e2: 1
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 6
+    e2: 2
+    text: heheheheheh
+    objectWithEffects: {fileID: 1132034008038503145}
+    leads: []
+  - e1: 6
+    e2: 3
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 6
+    e2: 4
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
+  - e1: 6
+    e2: 5
+    text: write on me :)
+    objectWithEffects: {fileID: 0}
+    leads: []
 --- !u!1 &1132034007171982683
 GameObject:
   m_ObjectHideFlags: 0
@@ -689,6 +780,8 @@ GameObject:
   - component: {fileID: 5954688172544927922}
   - component: {fileID: 1064571555}
   - component: {fileID: 1864579281}
+  - component: {fileID: 2399490139374296086}
+  - component: {fileID: 1864579282}
   m_Layer: 8
   m_Name: Claudio Photo
   m_TagString: Untagged
@@ -856,6 +949,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   otherOptionOpener: {fileID: 774732653}
+--- !u!114 &2399490139374296086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132034008038503145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c46c976cc1c8ec44a642745a8189ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetTransform: {fileID: 1132034008038503144}
+--- !u!114 &1864579282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132034008038503145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5664f6be025fba141ac6ab0a26d96651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  evidence: 2
 --- !u!1 &1132034008180370163
 GameObject:
   m_ObjectHideFlags: 0
