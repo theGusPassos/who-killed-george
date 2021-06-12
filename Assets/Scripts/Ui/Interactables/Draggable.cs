@@ -5,19 +5,20 @@ using UnityEngine.UI;
 
 namespace Assets.Scripts.Ui.Interactables
 {
-    public class Draggable : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler
+    public class Draggable : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler
     {
+        Animator animator;
         [SerializeField] GameObject options;
         RectTransform rectTransform;
-        Image image;
+        public Image image;
         bool canInteract = true;
 
         Vector2 positionBeforeDrag;
 
         private void Awake()
         {
+            animator = GetComponent<Animator>();
             rectTransform = GetComponent<RectTransform>();
-            image = GetComponent<Image>();
         }
 
         public void OnDrag(PointerEventData eventData)
@@ -37,8 +38,11 @@ namespace Assets.Scripts.Ui.Interactables
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            if (canInteract && positionBeforeDrag == rectTransform.anchoredPosition)
+            if (canInteract && positionBeforeDrag == rectTransform.anchoredPosition && !options.activeSelf)
+            {
+                animator.Play("selected");
                 options.SetActive(true);
+            }
         }
 
         public void OnPointerDown(PointerEventData eventData)
@@ -52,7 +56,20 @@ namespace Assets.Scripts.Ui.Interactables
         private void Update()
         {
             if (options.activeSelf && Input.GetMouseButtonDown(0))
+            {
                 DisableOptions();
+                animator.Play("unselected");
+            }
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            animator.Play("smol-unzoom");
+        }
+
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            animator.Play("smol-zoom");
         }
     }
 }
