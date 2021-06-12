@@ -33,13 +33,6 @@ namespace Assets.Scripts.Cutscene
             Destroy(gameObject);
         }
 
-        public GameObject character;
-
-        private void Start()
-        {
-            StartInterrogation(character.GetComponent<CharacterData>(), character.GetComponentInChildren<InterrogationDataHolder>());
-        }
-
         public void StartInterrogation(CharacterData characterData, InterrogationDataHolder interrogationData)
         {
             SetPhotosInInterrogation.Instance.Set();

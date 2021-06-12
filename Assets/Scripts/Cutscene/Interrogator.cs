@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Actions;
+using Assets.Scripts.Calendar;
 using Assets.Scripts.Cutscene.Setters;
 using UnityEngine;
 
@@ -50,6 +51,7 @@ namespace Assets.Scripts.Cutscene
                 currentQuestions = 0;
                 SetPhotosInInterrogation.Instance.DestroyAllPhotos();
                 InterrogationStarter.Instance.Finish();
+                DayRoutine.Instance.MarkNext();
             }
         }
 

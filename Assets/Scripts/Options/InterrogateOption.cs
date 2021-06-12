@@ -9,10 +9,12 @@ namespace Assets.Scripts.Options
     {
         CharacterData characterData;
         [SerializeField] InterrogationDataHolder interrogationDataHolder;
+        [SerializeField] public GameObject options;
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            // InterrogationStarter.Instance.StartInterrogation(characterData, null);
+             options.SetActive(false);
+             InterrogationStarter.Instance.StartInterrogation(characterData, interrogationDataHolder);
         }
 
         private void Awake()

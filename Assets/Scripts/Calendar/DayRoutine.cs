@@ -11,6 +11,8 @@ namespace Assets.Scripts.Calendar
         [SerializeField] GameObject[] placesToMark;
         int currentMarker;
 
+        [SerializeField] GameObject buttonToGiveUp;
+
         private void Awake()
         {
             Instance = this;
@@ -18,7 +20,12 @@ namespace Assets.Scripts.Calendar
 
         public void MarkNext()
         {
-            Instantiate(marker, placesToMark[currentMarker++].transform.position, Quaternion.identity, CanvasHolder.Instance.Canvas.transform);
+            if (currentMarker == placesToMark.Length - 1)
+            {
+                buttonToGiveUp.SetActive(true);
+            }
+
+            Instantiate(marker, placesToMark[currentMarker++].transform.position, Quaternion.identity, transform);
         }
     }
 }
