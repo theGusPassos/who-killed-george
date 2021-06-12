@@ -32,13 +32,13 @@ namespace Assets.Scripts.Ui.Interactables
             points[0] = originPosition.anchoredPosition + distanceFromPos;
             print(points[0]);
 
-            Vector2 local;
             if (targetPosition != null)
                 points[1] = targetPosition.anchoredPosition + distanceFromPos;
             else
             {
-                RectTransformUtility.ScreenPointToLocalPointInRectangle(WallHolder.Instance.wallImage.rectTransform,
-            Input.mousePosition, Camera.main, out local);
+                RectTransformUtility.ScreenPointToLocalPointInRectangle(
+                    CanvasHolder.Instance.Canvas.GetComponent<RectTransform>(),
+                         Input.mousePosition, Camera.main, out Vector2 local);
                 points[1] = local;
             }
 

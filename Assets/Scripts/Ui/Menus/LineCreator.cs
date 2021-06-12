@@ -10,9 +10,6 @@ namespace Assets.Scripts.Ui.Menus
 
         Line lineInstantiated;
 
-        [SerializeField] RectTransform testOrigin;
-        [SerializeField] RectTransform testTarget;
-
         private void Awake()
         {
             if (Instance == null)
@@ -22,12 +19,6 @@ namespace Assets.Scripts.Ui.Menus
             }
 
             Destroy(gameObject);
-        }
-
-        private void Start()
-        {
-            InstantiateLine(testOrigin);
-            SetLineTarget(testTarget);
         }
 
         public void InstantiateLine(RectTransform originPosition)
