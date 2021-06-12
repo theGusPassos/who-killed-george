@@ -13,6 +13,7 @@ namespace Assets.Scripts.Cutscene
         public TextMeshProUGUI start;
 
         public float timeToStartShowing;
+        public float timeToShowLogo;
         public float timeToShowImage;
         public float timeToShowCredits;
         float timer;
@@ -38,7 +39,7 @@ namespace Assets.Scripts.Cutscene
             {
                 timer += Time.deltaTime;
                 var color = logoImage.color;
-                color.a = Mathf.Lerp(0, 1, timer / timeToShowImage);
+                color.a = Mathf.Lerp(0, 1, timer / timeToShowLogo);
                 logoImage.color = color;
 
                 yield return new WaitForEndOfFrame();

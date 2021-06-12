@@ -985,8 +985,9 @@ MonoBehaviour:
   credits: {fileID: 1281896706}
   start: {fileID: 2058181943}
   timeToStartShowing: 3
-  timeToShowImage: 5
-  timeToShowCredits: 0.4
+  timeToShowLogo: 5
+  timeToShowImage: 2
+  timeToShowCredits: 0.2
 --- !u!1 &1113066210
 GameObject:
   m_ObjectHideFlags: 0
