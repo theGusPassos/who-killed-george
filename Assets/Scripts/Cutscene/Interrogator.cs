@@ -19,5 +19,10 @@ namespace Assets.Scripts.Cutscene
         {
             print(currentLinkedEvidence);
         }
+
+        public void RemoveLink()
+        {
+            currentLinkedEvidence = null;
+        }
     }
 }

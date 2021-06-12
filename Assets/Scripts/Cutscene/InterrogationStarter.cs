@@ -19,6 +19,8 @@ namespace Assets.Scripts.Cutscene
         [SerializeField] Image characterFace;
         [SerializeField] TextMeshProUGUI characterNameMesh;
 
+        InterrogationDataHolder interrogationData;
+
         private void Awake()
         {
             if (Instance == null)
@@ -35,13 +37,13 @@ namespace Assets.Scripts.Cutscene
 
         private void Start()
         {
-            StartInterrogation(character.GetComponent<CharacterData>(), character.GetComponentInChildren<InterrogationDataHolder>()
-                .GetLinked(Evidence.AmigoSuspeito, Evidence.Claudio));
+            StartInterrogation(character.GetComponent<CharacterData>(), character.GetComponentInChildren<InterrogationDataHolder>());
         }
 
-        public void StartInterrogation(CharacterData characterData, LinkedEvidence linkedEvidence)
+        public void StartInterrogation(CharacterData characterData, InterrogationDataHolder interrogationData)
         {
             SetPhotosInInterrogation.Instance.Set();
+            this.interrogationData = interrogationData;
             StartCoroutine(FadeIn());
             StartCoroutine(ShowCharactersFace(characterData.sprite, characterData.name));
         }
@@ -76,6 +78,17 @@ namespace Assets.Scripts.Cutscene
             }
         }
 
+        public void OnEvidencesSelected(Evidence e1, Evidence e2)
+        {
+            var linkedEvidences = interrogationData.GetLinked(e1, e2);
+            Interrogator.Instance.SetLinkedEvidences(linkedEvidences);
+        }
+
+        public void OnEvidenceDiselected()
+        {
+            Interrogator.Instance.RemoveLink();
+        }
+        
         // call after all texts
         IEnumerator FadeOut(GameObject[] leads)
         {

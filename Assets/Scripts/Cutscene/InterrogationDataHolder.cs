@@ -50,6 +50,7 @@ namespace Assets.Scripts.Cutscene
         Claudio,
         AmigoSuspeito,
         Dorgas,
-        DocumentosFalsos
+        DocumentosFalsos,
+        Sarah
     }
 }

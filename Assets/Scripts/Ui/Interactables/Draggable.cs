@@ -47,7 +47,7 @@ namespace Assets.Scripts.Ui.Interactables
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            canInteract = !LineCreator.Instance.HasLineOnScreen();
+            canInteract = !LineCreator.Instance.HasLineOnScreen() && !InterrogationLineCreator.Instance.HasLineOnScreen();
             positionBeforeDrag = rectTransform.anchoredPosition;
         }
 
