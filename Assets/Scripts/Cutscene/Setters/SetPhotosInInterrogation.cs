@@ -25,5 +25,18 @@ namespace Assets.Scripts.Cutscene.Setters
                 photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
             }
         }
+
+        public void AddPhotos(GameObject[] photos)
+        {
+            var list = photos;
+            for (var i = 0; i < list.Length; i++)
+            {
+                var d = new Vector3(distance * i, 0) + reference.position;
+                var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
+                photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
+            }
+
+                LeadPlacer.Instance.PlaceLeads(photos);
+        }
     }
 }

@@ -50,5 +50,12 @@ namespace Assets.Scripts.Actions
             InterrogationStarter.Instance.OnEvidencesSelected(this.evidence, evidence);
             lineConnected = true;
         }
+
+        public void DestroyLine()
+        {
+            Destroy(lineInstantiated.gameObject);
+            InterrogationStarter.Instance.OnEvidenceDiselected();
+            lineConnected = false;
+        }
     }
 }
