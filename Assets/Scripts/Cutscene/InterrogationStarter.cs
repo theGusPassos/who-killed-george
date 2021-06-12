@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Cutscene.Data;
+using Assets.Scripts.Cutscene.Setters;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -30,11 +31,19 @@ namespace Assets.Scripts.Cutscene
             Destroy(gameObject);
         }
 
-        public void StartInterrogation(CharacterData characterData, InterrogationData interrogationData)
+        public GameObject character;
+
+        private void Start()
         {
+            StartInterrogation(character.GetComponent<CharacterData>(), character.GetComponentInChildren<InterrogationDataHolder>()
+                .GetLinked(Evidence.AmigoSuspeito, Evidence.Claudio));
+        }
+
+        public void StartInterrogation(CharacterData characterData, LinkedEvidence linkedEvidence)
+        {
+            SetPhotosInInterrogation.Instance.Set();
             StartCoroutine(FadeIn());
             StartCoroutine(ShowCharactersFace(characterData.sprite, characterData.name));
-            StartCoroutine(FadeOut(interrogationData.leads));
         }
 
         IEnumerator FadeIn()

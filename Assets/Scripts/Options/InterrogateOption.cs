@@ -12,7 +12,7 @@ namespace Assets.Scripts.Options
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            InterrogationStarter.Instance.StartInterrogation(characterData, interrogationDataHolder.GetNext());
+            // InterrogationStarter.Instance.StartInterrogation(characterData, null);
         }
 
         private void Awake()
