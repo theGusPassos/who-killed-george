@@ -8,7 +8,7 @@ namespace Assets.Scripts.Ui.Interactables
     public class Draggable : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IBeginDragHandler, IEndDragHandler
     {
         Animator animator;
-        [SerializeField] GameObject options;
+        [SerializeField] public GameObject options;
         RectTransform rectTransform;
         public Image image;
         bool canInteract = true;

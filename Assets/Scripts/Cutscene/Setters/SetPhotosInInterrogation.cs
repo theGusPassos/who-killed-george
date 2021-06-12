@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Ui.Holders;
+using Assets.Scripts.Ui.Interactables;
 using UnityEngine;
 
 namespace Assets.Scripts.Cutscene.Setters
@@ -20,7 +21,8 @@ namespace Assets.Scripts.Cutscene.Setters
             for (var i = 0; i < list.Count; i++)
             {
                 var d = new Vector3(distance * i, 0) + reference.position;
-                Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
+                var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
+                photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
             }
         }
     }

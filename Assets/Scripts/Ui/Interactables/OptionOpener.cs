@@ -6,7 +6,7 @@ namespace Assets.Scripts.Ui.Interactables
 {
     public class OptionOpener : MonoBehaviour, IPointerUpHandler
     {
-        [SerializeField] GameObject options;
+        [SerializeField] public GameObject options;
         [SerializeField] TextMeshProUGUI note;
 
         bool clicked = false;
