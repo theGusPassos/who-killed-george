@@ -88,13 +88,15 @@ namespace Assets.Scripts.Cutscene
         {
             Interrogator.Instance.RemoveLink();
         }
+
+        public void Finish()
+        {
+            StartCoroutine(FadeOut());
+        }
         
         // call after all texts
-        IEnumerator FadeOut(GameObject[] leads)
+        IEnumerator FadeOut()
         {
-            yield return new WaitForSeconds(timeToBackgroundFade + timeToFade);
-            LeadPlacer.Instance.PlaceLeads(leads);
-
             while (canvasGroup.alpha > 0)
             {
                 // reset

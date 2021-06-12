@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Ui.Holders;
 using Assets.Scripts.Ui.Interactables;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Assets.Scripts.Cutscene.Setters
@@ -9,6 +10,8 @@ namespace Assets.Scripts.Cutscene.Setters
         public static SetPhotosInInterrogation Instance;
         [SerializeField] float distance;
         [SerializeField] RectTransform reference;
+
+        List<GameObject> allPhotos;
 
         private void Awake()
         {
@@ -23,6 +26,7 @@ namespace Assets.Scripts.Cutscene.Setters
                 var d = new Vector3(distance * i, 0) + reference.position;
                 var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
                 photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
+                allPhotos.Add(photoPlaced);
             }
         }
 
@@ -34,9 +38,16 @@ namespace Assets.Scripts.Cutscene.Setters
                 var d = new Vector3(distance * i, 0) + reference.position;
                 var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
                 photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
+                allPhotos.Add(photoPlaced);
             }
 
                 LeadPlacer.Instance.PlaceLeads(photos);
+        }
+
+        public void DestroyAllPhotos()
+        {
+            foreach (var photo in allPhotos)
+                Destroy(photo);
         }
     }
 }

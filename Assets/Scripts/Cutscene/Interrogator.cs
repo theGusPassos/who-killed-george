@@ -44,6 +44,13 @@ namespace Assets.Scripts.Cutscene
             }
 
             InterrogationLineCreator.Instance.DestroyLine();
+
+            if (currentQuestions == numberOfQuestions)
+            {
+                currentQuestions = 0;
+                SetPhotosInInterrogation.Instance.DestroyAllPhotos();
+                InterrogationStarter.Instance.Finish();
+            }
         }
 
         public void RemoveLink()
