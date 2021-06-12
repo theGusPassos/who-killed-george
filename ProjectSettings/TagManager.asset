@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Photos
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: One
+    uniqueID: 2492444699
+    locked: 0
+  - name: Two
+    uniqueID: 1095288225
     locked: 0
