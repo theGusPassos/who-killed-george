@@ -13,7 +13,6 @@ namespace Assets.Scripts.Ui
             if (Instance == null)
             {
                 Instance = this;
-                wallImage = GetComponent<Image>();
                 return;
             }
 

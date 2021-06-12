@@ -31,7 +31,6 @@ namespace Assets.Scripts.Ui.Interactables
                          Input.mousePosition, Camera.main, out Vector2 local);
             
             rectTransform.anchoredPosition = local;
-
             if (!WallHolder.Instance.IsInside(image))
                 rectTransform.anchoredPosition = oldPos;
         }
