@@ -8,6 +8,5 @@ namespace Assets.Scripts.Ui.Interactables
         public void OnPointerDown(PointerEventData eventData)
         {
         }
-
     }
 }
