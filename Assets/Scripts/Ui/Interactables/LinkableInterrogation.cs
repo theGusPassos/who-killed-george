@@ -24,5 +24,4 @@ namespace Assets.Scripts.Ui.Interactables
             }
         }
     }
-
 }
