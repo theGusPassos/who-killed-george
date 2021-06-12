@@ -497,8 +497,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7f36106e98b15f4dbee10fea5aeeac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToFade: 1
+  timeToBackgroundFade: 2
+  timeToFade: 2
   characterFace: {fileID: 1803604722}
+  timeToShowCharacterName: 3
+  characterNameMesh: {fileID: 950948916}
+  timeToStartTyping: 0
+  textTyper: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,7 +1023,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
