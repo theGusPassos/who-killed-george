@@ -14,6 +14,8 @@ namespace Assets.Scripts.Cutscene
 
         int currentQuestions = 0;
 
+        [SerializeField] TextShower textShower;
+
         private void Awake()
         {
             Instance = this;
@@ -32,12 +34,10 @@ namespace Assets.Scripts.Cutscene
             buttonToInterrogate.SetActive(false);
 
             // will play the cutscene here
-            print(currentLinkedEvidence.text);
-
-            CleanUp();
+            textShower.ShowText(currentLinkedEvidence.text);
         }
 
-        void CleanUp()
+        public void CleanUp()
         {
             if (currentLinkedEvidence.leads != null && currentLinkedEvidence.leads.Length > 0)
             {

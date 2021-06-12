@@ -53,7 +53,7 @@ namespace Assets.Scripts.Actions
 
         public void DestroyLine()
         {
-            Destroy(lineInstantiated.gameObject);
+            if (lineInstantiated != null) Destroy(lineInstantiated.gameObject);
             InterrogationStarter.Instance.OnEvidenceDiselected();
             lineConnected = false;
         }
