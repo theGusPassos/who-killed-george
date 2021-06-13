@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Sound;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 namespace Assets.Scripts.Options
@@ -7,6 +8,7 @@ namespace Assets.Scripts.Options
     {
         public void OnPointerDown(PointerEventData eventData)
         {
+            ClickSystem.Instance.PlayClick();
             Application.Quit();
         }
     }

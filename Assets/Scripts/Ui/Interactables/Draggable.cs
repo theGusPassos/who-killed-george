@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts.Actions;
+using Assets.Scripts.Sound;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -24,13 +25,13 @@ namespace Assets.Scripts.Ui.Interactables
         public void OnDrag(PointerEventData eventData)
         {
             if (!canInteract) return;
-            
+
             var oldPos = rectTransform.anchoredPosition;
-                
+
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                     CanvasHolder.Instance.Canvas.GetComponent<RectTransform>(),
                          Input.mousePosition, Camera.main, out Vector2 local);
-            
+
             rectTransform.anchoredPosition = local;
             if (!WallHolder.Instance.IsInside(image))
                 rectTransform.anchoredPosition = oldPos;
@@ -43,12 +44,17 @@ namespace Assets.Scripts.Ui.Interactables
                 animator.Play("selected");
                 options.SetActive(true);
             }
+            else
+            {
+                ClickSystem.Instance.PlayClickRelease();
+            }
         }
 
         public void OnPointerDown(PointerEventData eventData)
         {
             canInteract = !LineCreator.Instance.HasLineOnScreen() && !InterrogationLineCreator.Instance.HasLineOnScreen();
             positionBeforeDrag = rectTransform.anchoredPosition;
+            ClickSystem.Instance.PlayClickPhoto();
         }
 
         public void DisableOptions() => options.SetActive(false);

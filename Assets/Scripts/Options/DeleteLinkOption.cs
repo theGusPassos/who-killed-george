@@ -1,4 +1,5 @@
-﻿using Assets.Scripts.Ui.Interactables;
+﻿using Assets.Scripts.Sound;
+using Assets.Scripts.Ui.Interactables;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,6 +9,7 @@ namespace Assets.Scripts.Options
     {
         public void OnPointerDown(PointerEventData eventData)
         {
+            ClickSystem.Instance.PlayClick();
             Destroy(GetComponentInParent<Line>().gameObject);
         }
     }

@@ -1,5 +1,6 @@
 ﻿using Assets.Scripts.Cutscene;
 using Assets.Scripts.Cutscene.Data;
+using Assets.Scripts.Sound;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -13,6 +14,7 @@ namespace Assets.Scripts.Options
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            ClickSystem.Instance.PlayClick();
              options.SetActive(false);
              InterrogationStarter.Instance.StartInterrogation(characterData, interrogationDataHolder);
         }
