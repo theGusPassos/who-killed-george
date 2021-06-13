@@ -11,9 +11,11 @@ namespace Assets.Scripts.Options
         CharacterData characterData;
         [SerializeField] InterrogationDataHolder interrogationDataHolder;
         [SerializeField] public GameObject options;
+        [SerializeField] Animator animator;
 
         public void OnPointerDown(PointerEventData eventData)
         {
+            animator.Play("unselected");
             ClickSystem.Instance.PlayClick();
              options.SetActive(false);
              InterrogationStarter.Instance.StartInterrogation(characterData, interrogationDataHolder);

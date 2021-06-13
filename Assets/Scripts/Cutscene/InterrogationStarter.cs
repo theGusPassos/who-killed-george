@@ -36,6 +36,7 @@ namespace Assets.Scripts.Cutscene
         public void StartInterrogation(CharacterData characterData, InterrogationDataHolder interrogationData)
         {
             SetPhotosInInterrogation.Instance.Set();
+            Interrogator.Instance.ShowTextInfo();
             this.interrogationData = interrogationData;
             StartCoroutine(FadeIn());
             StartCoroutine(ShowCharactersFace(characterData.sprite, characterData.name));

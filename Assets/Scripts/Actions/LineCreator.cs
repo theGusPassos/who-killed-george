@@ -22,6 +22,14 @@ namespace Assets.Scripts.Actions
             Destroy(gameObject);
         }
 
+        private void Update()
+        {
+            if (lineInstantiated && Input.GetMouseButtonDown(1))
+            {
+                Destroy(lineInstantiated.gameObject);
+            }
+        }
+
         public void InstantiateLine(RectTransform originPosition)
         {
             var objectInstantiated = Instantiate(linePrefab, CanvasHolder.Instance.Canvas.transform);
@@ -35,6 +43,9 @@ namespace Assets.Scripts.Actions
 
         public void SetLineTarget(RectTransform targetPosition)
         {
+            if (lineInstantiated.originPosition == targetPosition)
+                return;
+
             lineInstantiated.SetTargetPostion(targetPosition);
             lineInstantiated.GetComponent<LineNoteCreator>().EnableNote();
             lineInstantiated = null;

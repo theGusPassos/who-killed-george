@@ -24,6 +24,7 @@ namespace Assets.Scripts.Cutscene
         {
             hasShown = false;
             textMesh.text = text;
+            timer = 0;
 
             StartCoroutine(FadeAndShow());
         }
@@ -60,12 +61,8 @@ namespace Assets.Scripts.Cutscene
                 timer += Time.deltaTime;
                 canvasGroup.alpha = Mathf.Lerp(1, 0, timer / timeToFade);
 
-
                 yield return new WaitForEndOfFrame();
             }
-
-            hasShown = true;
         }
-
     }
 }

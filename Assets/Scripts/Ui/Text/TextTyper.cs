@@ -11,9 +11,16 @@ namespace Assets.Scripts.UI.Text
         [SerializeField] float timeBetweenWords;
         private float currentTimer;
 
+        [SerializeField] string testString;
+
         private void Awake()
         {
             textMesh = GetComponent<TextMeshProUGUI>();
+        }
+
+        private void Start()
+        {
+            Type(testString);
         }
 
         public void Type(string toType) => this.toType = toType;

@@ -22,6 +22,11 @@ namespace Assets.Scripts.Cutscene
             Instance = this;
         }
 
+        public void ShowTextInfo()
+        {
+            tutoText.SetActive(true);
+        }
+
         public void SetLinkedEvidences(LinkedEvidence linkedEvidence)
         {
             buttonToInterrogate.SetActive(true);
@@ -60,7 +65,6 @@ namespace Assets.Scripts.Cutscene
         public void RemoveLink()
         {
             buttonToInterrogate.SetActive(false);
-            tutoText.SetActive(true);
             currentLinkedEvidence = null;
         }
     }

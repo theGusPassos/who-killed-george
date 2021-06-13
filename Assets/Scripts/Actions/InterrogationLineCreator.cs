@@ -25,6 +25,14 @@ namespace Assets.Scripts.Actions
             Destroy(gameObject);
         }
 
+        private void Update()
+        {
+            if (lineInstantiated && Input.GetMouseButtonDown(1))
+            {
+                Destroy(lineInstantiated.gameObject);
+            }
+        }
+
         public void InstantiateLine(RectTransform originPosition, Evidence evidence)
         {
             if (lineInstantiated != null)
@@ -46,6 +54,9 @@ namespace Assets.Scripts.Actions
 
         public void SetLineTarget(RectTransform targetPosition, Evidence evidence)
         {
+            if (lineInstantiated.originPosition == targetPosition)
+                return;
+
             lineInstantiated.SetTargetPostion(targetPosition);
             InterrogationStarter.Instance.OnEvidencesSelected(this.evidence, evidence);
             lineConnected = true;

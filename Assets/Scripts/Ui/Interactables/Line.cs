@@ -7,7 +7,7 @@ namespace Assets.Scripts.Ui.Interactables
     {
         UILineRenderer uiLineRenderer;
 
-        [SerializeField] RectTransform originPosition;
+        [SerializeField] public RectTransform originPosition;
         [SerializeField] RectTransform targetPosition;
 
         [SerializeField] Vector2 distanceFromPos;

@@ -28,6 +28,7 @@ namespace Assets.Scripts.Cutscene.Setters
                 var d = new Vector3(distance * i, 0) + reference.position;
                 var photoPlaced = Instantiate(list[i], d, Quaternion.identity, SecondCanvasHolder.Instance.Canvas.transform);
                 photoPlaced.GetComponent<SetAnotherOptionOpener>().Set();
+                photoPlaced.GetComponent<Animator>().Play("nothing");
                 allPhotos.Add(photoPlaced);
                 allEvidences.Add(photoPlaced.GetComponent<EvidenceType>().evidence);
             }
