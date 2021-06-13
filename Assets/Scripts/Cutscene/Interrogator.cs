@@ -60,6 +60,7 @@ namespace Assets.Scripts.Cutscene
             }
 
             timer = 0;
+            InterrogationStarter.Instance.Finish();
             yield return new WaitForSeconds(0.5f);
 
             StartCoroutine(FadeOutDayCutscene());
@@ -90,7 +91,6 @@ namespace Assets.Scripts.Cutscene
             {
                 currentQuestions = 0;
                 SetPhotosInInterrogation.Instance.DestroyAllPhotos();
-                InterrogationStarter.Instance.Finish();
                 DayRoutine.Instance.MarkNext();
                 StartCoroutine(FadeInDayCutscene());
             }

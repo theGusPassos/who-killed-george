@@ -98,7 +98,7 @@ namespace Assets.Scripts.Cutscene
                 //characterNameMesh.color = new Color(255, 255, 255, 0);
 
                 timer += Time.deltaTime;
-                canvasGroup.alpha = Mathf.Lerp(1, 0, timer / timeToBackgroundFade);
+                canvasGroup.alpha = Mathf.Lerp(1, 0, timer / 0.2f);
                 yield return new WaitForEndOfFrame();
             }
         }
