@@ -65,9 +65,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Driven by rage and opioids he drove  to Jonathan''s house aiming to kill
-    him, however the same fuel that woke his action blinded him in the most critical
-    moment. He mistakenly killed the one he was supposed to protect.
+  m_text: 'Driven by rage and opioids he drove  to <color=#dd0000>Jonathan''s</color>
+    house aiming to kill him, however the same fuel that woke his action blinded
+    him in the most critical moment. He mistakenly killed the one he was supposed
+    to protect.
 
 '
   m_isRightToLeft: 0
@@ -477,9 +478,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mark knew about Jonathan''s behaviour against his wife and kid. He not
-    only killed Ana - the woman he fell in love with - but also was extremally abusive
-    against his own son.
+  m_text: '<color=#dd0000>Mark</color> knew about <color=#dd0000>Jonathan''s</color>
+    behaviour against his wife and kid. He not only killed Ana - the woman he fell
+    in love with - but also was extremally abusive against his own son.
 
 '
   m_isRightToLeft: 0
@@ -616,8 +617,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'After Ana''s death Mark was caught in a spiral of sorrow and drugs. He
-    planned to run away with George, but not until he avenged his love.
+  m_text: 'After Ana''s death <color=#dd0000>Mark</color> was caught in a spiral
+    of sorrow and drugs. He planned to run away with <color=#dd0000>George</color>,
+    but not until he avenged his love.
 
 '
   m_isRightToLeft: 0
@@ -754,8 +756,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jonathan is now free from his death sentence while Mark takes his deserved
-    place as the one to be executed.
+  m_text: '<color=#dd0000>Jonathan</color> is now free from his death sentence while
+    <color=#dd0000>Mark</color> takes his deserved place as the one to be executed.
 
 '
   m_isRightToLeft: 0
@@ -892,7 +894,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Finally a satisfying answer.
+  m_text: <b>Finally a satisfying answer.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c8af3a0080c43a1408394ea9bc4dca21, type: 2}
   m_sharedMaterial: {fileID: -5655757407605512307, guid: c8af3a0080c43a1408394ea9bc4dca21,

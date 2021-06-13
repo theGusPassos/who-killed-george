@@ -68,8 +68,9 @@ MonoBehaviour:
   m_text: '
 
     He already proved to be an agressive person, so after this fury
-    access he just left the body right there and headed to meet Arthur. Obviously
-    he stayed in Arthur''s house during all the night, but the kid was already dead.
+    access he just left the body right there and headed to meet <color=#dd0000>Arthur</color>.
+    Obviously he stayed in Arthur''s house during all the night, but the kid was
+    already dead.
 
 '
   m_isRightToLeft: 0
@@ -342,9 +343,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Jonathan proved to be completely addicted to drugs. I''m pretty sure that
-    maybe Jonathan has killed George even before hang out with Arthur, probably doing
-    it while he was under those drugs effect.
+  m_text: '<color=#dd0000>Jonathan</color> proved to be completely addicted to drugs.
+    I''m pretty sure that maybe <color=#dd0000>Jonathan</color> has killed <color=#dd0000>George</color>
+    even before hang out with <color=#dd0000>Arthur</color>, probably doing it while
+    he was under those drugs effect.
 
 '
   m_isRightToLeft: 0

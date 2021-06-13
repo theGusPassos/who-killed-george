@@ -65,8 +65,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '"Agatha does not seem to have a motive for killing George, yet, she was
-    the only one with access to the house.
+  m_text: '<color=#dd0000>Agatha</color> does not seem to have a motive for killing
+    <color=#dd0000>George</color>, yet, she was the only one with access to the house.
 
 '
   m_isRightToLeft: 0
@@ -78,8 +78,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -243,7 +243,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072841682104401592}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -288,8 +288,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 1
   m_colorMode: 3
   m_fontColorGradient:
@@ -381,9 +381,9 @@ RectTransform:
   m_Children:
   - {fileID: 1072841681913827551}
   - {fileID: 1072841680585390678}
-  - {fileID: 1072841682077007027}
   - {fileID: 1398223233708661914}
   - {fileID: 1398223233109376833}
+  - {fileID: 1072841682077007027}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -505,7 +505,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072841682104401592}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: But a strange feeling of something is not right seems to stick around..."
+  m_text: But a strange feeling of something is not right seems to stick around...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c8af3a0080c43a1408394ea9bc4dca21, type: 2}
   m_sharedMaterial: {fileID: -5655757407605512307, guid: c8af3a0080c43a1408394ea9bc4dca21,
@@ -550,8 +550,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -640,7 +640,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1072841682104401592}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -677,8 +677,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    That night, George was alone at home and, of course, Agatha knew
-    about that. Jonathan was out at Arthur''s house drinking, trying to avoid bad
+    That night, <color=#dd0000>George</color> was alone at home and,
+    of course, <color=#dd0000>Agatha</color> knew about that. <color=#dd0000>Jonathan</color>
+    was out at <color=#dd0000>Arthur''s</color> house drinking, trying to avoid bad
     feellings caused by his wife''s death. But, for some yet unkown reason she allege
     that did not saw those two that night.
 
@@ -692,8 +693,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

@@ -402,9 +402,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Arthur had an affair for George, that''s simple. But the feeling that
-    he has been cultivating inside of his own heart, since George was a completely
-    prohibited person and love for him, didn''t grow up well.
+  m_text: '<color=#dd0000>Arthur</color> had an affair for <color=#dd0000>George</color>,
+    that''s simple. But the feeling that he has been cultivating inside of his own
+    heart, since George was a completely prohibited person and love for him, didn''t
+    grow up well.
 
 '
   m_isRightToLeft: 0
@@ -679,11 +680,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: '
 
-    Since he''s a manipulator and a little bit agressive, Arthur used
-    Jonathan''s lack of awareness and went to his house, finding George all alone.
-    If he couldn''t be his lover, he wouldn''t belong someone else! And then he just
-    killed the boy, coming back to his house without leave any suspect. Jonathan
-    would work as his alibi. A perfect plan.
+    Since he''s a manipulator and a little bit agressive, <color=#dd0000>Arthur</color>
+    used <color=#dd0000>Jonathan''s</color> lack of awareness and went to his house,
+    finding <color=#dd0000>George</color> all alone. If he couldn''t be his lover,
+    he wouldn''t belong someone else! And then he just killed the boy, coming back
+    to his house without leave any suspect. <color=#dd0000>Jonathan</color> would
+    work as his alibi. A perfect plan.
 
 
 '
@@ -750,7 +752,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: -173.70833}
+  m_margin: {x: 0, y: 0, z: 0, w: -240.30206}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
