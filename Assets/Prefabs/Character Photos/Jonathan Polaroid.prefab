@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 3207334014631969406}
   - component: {fileID: 994748901229373114}
   - component: {fileID: 6228276490516211352}
+  - component: {fileID: 1421828068}
   m_Layer: 8
   m_Name: Jonathan Polaroid
   m_TagString: Untagged
@@ -99,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -226,6 +228,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: fodaseufausefhua
+--- !u!114 &1421828068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178952338492648577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9fcb29f1e2f9ae4d9c3c2a8fa110147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  factsForCutscene:
+  - cutscene: {fileID: 3031842991352179986, guid: 68326d5bd7b47bf4fb0d0f2cb08dd95c,
+      type: 3}
+    factsNecessary: 00000000
+  - cutscene: {fileID: 4002401467696515853, guid: 11792c283ad4b9242968d09043dc30d4,
+      type: 3}
+    factsNecessary: 
 --- !u!1 &994748900099640029
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,6 +361,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -366,13 +388,12 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
   m_fontSize: 80
   m_fontSizeBase: 80
   m_fontWeight: 400
@@ -380,6 +401,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -390,10 +413,8 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -401,40 +422,18 @@ MonoBehaviour:
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: -1.6949089, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 994748900166503599}
-    characterCount: 7
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &994748900171769093
@@ -504,8 +503,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162, y: -188}
-  m_SizeDelta: {x: 166.38205, y: 139.17944}
+  m_AnchoredPosition: {x: 276.4, y: -188}
+  m_SizeDelta: {x: 395.17514, y: 139.17944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &994748900491168121
 CanvasRenderer:
@@ -529,6 +528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -631,6 +631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -725,214 +726,143 @@ MonoBehaviour:
   linkedEvidences:
   - e1: 0
     e2: 1
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: Just like everyone else he also does not stand her.
+    objectWithEffects: []
     leads: []
   - e1: 0
     e2: 2
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'She''s just an annoying old lady that has nothing more interesting to
+      do than taking care of other people''s business. '
+    objectWithEffects: []
     leads: []
   - e1: 0
     e2: 3
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: She must know everything about his life since she does nothing else than
+      spy on others, but I could not tell what their relationship is, never saw them
+      together.
+    objectWithEffects: []
     leads: []
   - e1: 0
     e2: 4
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'Maybe if she start to use it she''ll have something else to do other than
+      talking about my life. '
+    objectWithEffects: []
     leads: []
   - e1: 0
     e2: 5
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'Documents? I think she needs a cat. '
+    objectWithEffects: []
     leads: []
   - e1: 0
     e2: 6
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 1
-    e2: 0
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: She is so annoying not even George liked spending time with her. It was
+      my wife who befriend with her, but I never understood that.
+    objectWithEffects: []
     leads: []
   - e1: 1
     e2: 2
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: I've been going out more since Ana... my wife died some years ago, and
+      that happened that day too. He called me and we went out to drink like in the
+      old days. The night was long and I ended up sleeping in my friend's house.
+      <br><br>When I woke up the next day it was already morning, <color=#dd0000>Arthur</color>
+      was not there. I headed home and noticed the cops in front of my house, that's
+      when I found out what happened to my son.
+    objectWithEffects: []
     leads: []
   - e1: 1
     e2: 3
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: We studied together in high school and we all stopped to hang out after
+      that. They are not close or anything, pretty sure about that, but I have seen
+      <color=#dd0000>Mark</color> going out of his house someday, no idea what he
+      was doing there.
+    objectWithEffects: []
     leads: []
   - e1: 1
     e2: 4
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: He used to be my dealer... He's not selling anymore, there's another business
+      now, but I'm not sure what it is and how it works.
+    objectWithEffects: []
     leads: []
   - e1: 1
     e2: 5
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'Oh, so that''s what he''s being working with? I didn''t know that. '
+    objectWithEffects: []
     leads: []
   - e1: 1
     e2: 6
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 2
-    e2: 0
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 2
-    e2: 1
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: They were pretty close, in a way that I didn't approve, of course - you
+      know what I mean. It was hard to teach him how he should behave as a grown
+      up man, but he got it with time. <color=#dd0000>Arthur</color> ended up respecting
+      our friendship and kept a distance. <br><br>He always have been a kind of manipulator
+      and I remember that often he got angry due to his jealousy. I've never liked
+      the idea of he being close to <b>MY</b> son.
+    objectWithEffects:
+    - {fileID: 5272156888519855606, guid: 4877c07f68e410143a36b867910f1ccd, type: 3}
     leads: []
   - e1: 2
     e2: 3
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: "We were close in high school, the three of us - counting my wife. Things
+      didn't go well for both of us were attracted to Ana. She ended up choosing
+      me\u2026 as you can see. We got married and over the years I've noticed how
+      he never got over that. He still doesn't treat me like he used to."
+    objectWithEffects: []
     leads: []
   - e1: 2
     e2: 4
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: Look... I used to use it. I'm still trying to stop, but it's not easy.
+      After my kid's death it's being harder and harder... I'm going to stop it.
+      And it's not because I'm in this situattion that <b>I'LL KILL MY OWN CHILD.
+      </b> </b> And by the way, I'm not the only one who's involved with it. Pretty
+      sure I saw Mark coming out of Arthur's house one of these days.
+    objectWithEffects: []
     leads: []
   - e1: 2
     e2: 5
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'Why would I need fake IDs? '
+    objectWithEffects: []
     leads: []
   - e1: 2
     e2: 6
-    text: kekw
-    objectWithEffects: {fileID: 178952338492648577}
+    text: George, my lovely son... My heart aches thinking about life without him.
+      He was obedient as a kid, his teenage years were harder as he became - well,
+      maybe a little more rebel. Sometimes things might have gone a little out of
+      control, but I still never stopped loving him. <br><br> I want justice for
+      what's been done to him, it wasn't me and no one can prove otherwise. I was
+      with <color=#dd0000>Arthur</color> in the night he was murdered...
+    objectWithEffects: []
     leads:
-    - {fileID: 178952338492648577}
-  - e1: 3
-    e2: 0
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 3
-    e2: 1
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 3
-    e2: 2
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
+    - {fileID: 610376639462640084, guid: b34e747bb218d4f47833193de5383a7b, type: 3}
   - e1: 3
     e2: 4
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'He was very against it in highschool. That''s the only thing I know. '
+    objectWithEffects: []
     leads: []
   - e1: 3
     e2: 5
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'I don''t know anything about that. '
+    objectWithEffects: []
     leads: []
   - e1: 3
     e2: 6
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 4
-    e2: 0
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 4
-    e2: 1
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 4
-    e2: 2
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 4
-    e2: 3
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'Ana used to take George to Mark''s house back in the day. I never asked
+      what <color=#dd0000>George</color> thought about <color=#dd0000>Mark</color>
+      though.  '
+    objectWithEffects: []
     leads: []
   - e1: 4
     e2: 5
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'What is that supposed to mean? '
+    objectWithEffects: []
     leads: []
   - e1: 4
     e2: 6
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 5
-    e2: 0
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 5
-    e2: 1
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 5
-    e2: 2
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 5
-    e2: 3
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 5
-    e2: 4
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'My kid never used it I wouldn''t allow it. '
+    objectWithEffects: []
     leads: []
   - e1: 5
     e2: 6
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 6
-    e2: 0
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 6
-    e2: 1
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 6
-    e2: 2
-    text: heheheheheh
-    objectWithEffects: {fileID: 178952338492648577}
-    leads: []
-  - e1: 6
-    e2: 3
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 6
-    e2: 4
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
-    leads: []
-  - e1: 6
-    e2: 5
-    text: write on me :)
-    objectWithEffects: {fileID: 0}
+    text: 'Jeezz. He was a kid. '
+    objectWithEffects: []
     leads: []
 --- !u!1 &994748901364410345
 GameObject:
@@ -994,6 +924,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1020,13 +951,12 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
   m_fontSize: 80
   m_fontSizeBase: 80
   m_fontWeight: 400
@@ -1034,6 +964,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1044,10 +976,8 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -1055,40 +985,18 @@ MonoBehaviour:
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: -206.54604, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 994748901364410347}
-    characterCount: 4
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3178774224661600282
@@ -1151,6 +1059,7 @@ MonoBehaviour:
   m_Material: {fileID: 2100000, guid: ce0999275c004e947992fcd5ba15e573, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1225,6 +1134,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1251,13 +1161,12 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
   m_fontSize: 80
   m_fontSizeBase: 80
   m_fontWeight: 400
@@ -1265,6 +1174,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1275,10 +1186,8 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -1286,40 +1195,18 @@ MonoBehaviour:
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: -206.54604, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 3494916961003145472}
-    characterCount: 4
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3494916961201933788
@@ -1383,6 +1270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1426,6 +1314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interrogationDataHolder: {fileID: 994748901321634007}
   options: {fileID: 3494916961329937539}
+  animator: {fileID: 994748899881880779}
 --- !u!1 &3494916961297113573
 GameObject:
   m_ObjectHideFlags: 0
@@ -1486,6 +1375,7 @@ MonoBehaviour:
   m_Material: {fileID: 2100000, guid: 8100a60e2df1db240b1905c55fc21ad4, type: 2}
   m_Color: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1567,8 +1457,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.125, y: 0}
-  m_SizeDelta: {x: -2.0932617, y: 0}
+  m_AnchoredPosition: {x: 88.5, y: 0}
+  m_SizeDelta: {x: 175.2948, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3494916961561838281
 CanvasRenderer:
@@ -1593,6 +1483,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1619,13 +1510,12 @@ MonoBehaviour:
   m_fontColorGradientPreset: {fileID: 0}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: 0
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_outlineColor:
-    serializedVersion: 2
-    rgba: 4278190080
   m_fontSize: 80
   m_fontSizeBase: 80
   m_fontWeight: 400
@@ -1633,6 +1523,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 1
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 513
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1643,10 +1535,8 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
-  m_isLinkedTextComponent: 0
-  m_isTextTruncated: 0
+  parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
@@ -1654,40 +1544,18 @@ MonoBehaviour:
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0
-  m_ignoreRectMaskCulling: 0
-  m_ignoreCulling: 1
   m_horizontalMapping: 0
   m_verticalMapping: 0
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
   m_VertexBufferAutoSizeReduction: 1
-  m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: -291.0658, w: 0}
-  m_textInfo:
-    textComponent: {fileID: 3494916961561838280}
-    characterCount: 11
-    spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
-    linkCount: 0
-    lineCount: 1
-    pageCount: 1
-    materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_spriteAnimator: {fileID: 0}
   m_hasFontAssetChanged: 0
-  m_subTextObjects:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &3494916962536674148
@@ -1726,8 +1594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 162.59, y: 85}
-  m_SizeDelta: {x: 166.38205, y: 139.17944}
+  m_AnchoredPosition: {x: 208.59, y: 85}
+  m_SizeDelta: {x: 258.38754, y: 139.17944}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3494916962536674151
 CanvasRenderer:
@@ -1751,6 +1619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}

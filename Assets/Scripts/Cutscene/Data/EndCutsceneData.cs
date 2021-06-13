@@ -31,6 +31,7 @@ namespace Assets.Scripts.Cutscene.Data
 
     public enum Facts
     {
+        ArthurMotive,
         a, b, c
     }
 }
