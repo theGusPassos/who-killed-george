@@ -2998,7 +2998,7 @@ RectTransform:
   m_GameObject: {fileID: 924155969}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 11.369467, y: 3.1249003, z: 1}
+  m_LocalScale: {x: 11.369467, y: 4.179554, z: 1}
   m_Children: []
   m_Father: {fileID: 556038021}
   m_RootOrder: 0
@@ -3435,7 +3435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 141, y: 193}
+  m_AnchoredPosition: {x: 141, y: 230}
   m_SizeDelta: {x: 800, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1079351917
@@ -3457,7 +3457,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: bota alguma coisa pra gente ler ai
+  m_text: I've been going out more since my wife died some years ago, and that happened
+    that day too. He called me and we went out to drink as we did in the old days.
+    The night was long and I ended up sleeping in my friend's house. <br><br>When
+    I woke up the next day it was morning, <color=#dd0000>Arthur</color> was not
+    there. I headed home and noticed the cops in front of my house, that's when I
+    knew what happend to my son.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aec4e63c40139334080f4d166b2dcc52, type: 2}
   m_sharedMaterial: {fileID: 4157727920762683012, guid: aec4e63c40139334080f4d166b2dcc52,
@@ -3486,8 +3491,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3503,7 +3508,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: -1
+  m_firstOverflowCharacterIndex: 354
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -3524,15 +3529,15 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -99.846985, y: 0, z: -60.713104, w: 46.435276}
+  m_margin: {x: -99.846985, y: 0, z: -60.713104, w: -14.827991}
   m_textInfo:
     textComponent: {fileID: 1079351917}
-    characterCount: 34
+    characterCount: 389
     spriteCount: 0
-    spaceCount: 6
-    wordCount: 7
+    spaceCount: 83
+    wordCount: 82
     linkCount: 0
-    lineCount: 1
+    lineCount: 8
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -4203,7 +4208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 180, y: -100}
+  m_AnchoredPosition: {x: 180, y: -153}
   m_SizeDelta: {x: 800, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1343182022
@@ -5585,6 +5590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 395.17514
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3494916961329937539, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}

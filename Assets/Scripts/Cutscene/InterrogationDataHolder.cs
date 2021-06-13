@@ -12,19 +12,29 @@ namespace Assets.Scripts.Cutscene
         [ContextMenu("generate evidences")]
         public void Generate()
         {
-            foreach (var e1 in (Evidence[])Enum.GetValues(typeof(Evidence)))
+            var t = DifferentCombinations((Evidence[])Enum.GetValues(typeof(Evidence)), 2);
+            foreach (var i in t)
             {
-                foreach (var e2 in (Evidence[])Enum.GetValues(typeof(Evidence)))
+                linkedEvidences.Add(new LinkedEvidence
                 {
-                    if (e1 != e2 && GetLinked(e1, e1) == null)
-                    linkedEvidences.Add(new LinkedEvidence
-                    {
-                        e1 = e1,
-                        e2 = e2,
-                        text = "write on me :)"
-                    });
-                }
+                    e1 = i.First(),
+                    e2 = i.Last(),
+                    text = "write on me :)"
+                });
             }
+            //foreach (var e1 in (Evidence[])Enum.GetValues(typeof(Evidence)))
+            //{
+            //    foreach (var e2 in (Evidence[])Enum.GetValues(typeof(Evidence)))
+            //    {
+            //        if (e1 != e2 && GetLinked(e1, e1) == null)
+            //            linkedEvidences.Add(new LinkedEvidence
+            //            {
+            //                e1 = e1,
+            //                e2 = e2,
+            //                text = "write on me :)"
+            //            });
+            //    }
+            //}
         }
 
         public LinkedEvidence GetLinked(Evidence e1, Evidence e2)
@@ -32,6 +42,14 @@ namespace Assets.Scripts.Cutscene
             return linkedEvidences.FirstOrDefault(a => (e1 == a.e1 && e2 == a.e2) ||
                                                        (e1 == a.e2 && e2 == a.e1));
         }
+        
+        public static IEnumerable<IEnumerable<T>> DifferentCombinations<T>(IEnumerable<T> elements, int k)
+        {
+            return k == 0 ? new[] { new T[0] } :
+              elements.SelectMany((e, i) =>
+                DifferentCombinations(elements.Skip(i + 1), k - 1).Select(c => (new[] { e }).Concat(c)));
+        }
+
     }
 
     [System.Serializable]
@@ -52,6 +70,6 @@ namespace Assets.Scripts.Cutscene
         Mark,
         Dorgas,
         DocumentosFalsos,
-        George 
+        George
     }
 }
