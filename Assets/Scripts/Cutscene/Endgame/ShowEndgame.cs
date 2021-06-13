@@ -24,10 +24,10 @@ namespace Assets.Scripts.Cutscene.Endgame
 
         [SerializeField] TextMeshProUGUI textMesh;
 
-        public void StartCutscene(AccusedText accusedText)
+        public void StartCutscene(EndCutsceneData accusedText)
         {
-            textMesh.text = accusedText.text;
-            StartCoroutine(ShowUI());
+            var a = accusedText.GetCutsceneForCurrentFacts(FactDataHolder.Instance.facts);
+            Instantiate(a.cutscene);
         }
 
         IEnumerator ShowUI()

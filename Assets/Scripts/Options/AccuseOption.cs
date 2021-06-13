@@ -10,7 +10,8 @@ namespace Assets.Scripts.Options
     {
         public void OnPointerDown(PointerEventData eventData)
         {
-            ShowEndgame.Instance.StartCutscene(GetComponentInParent<AccusedText>());
+            var t = GetComponentInParent<EndCutsceneData>();
+            ShowEndgame.Instance.StartCutscene(t);
             ClickSystem.Instance.PlayClick();
         }
     }

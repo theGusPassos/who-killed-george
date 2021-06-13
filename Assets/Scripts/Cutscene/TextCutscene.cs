@@ -21,6 +21,7 @@ namespace Assets.Scripts.Cutscene
 
         private void Awake()
         {
+            textMeshs = GetComponentsInChildren<TextMeshProUGUI>();
             StartCoroutine(FadeAndShowText());
         }
 
