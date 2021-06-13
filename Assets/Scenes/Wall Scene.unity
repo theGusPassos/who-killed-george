@@ -1814,6 +1814,272 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linePrefab: {fileID: 2467139244726370295, guid: 6860f599cd548cf41a239f24704ea25c,
     type: 3}
+--- !u!1001 &377750784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 794654400}
+    m_Modifications:
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.size
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[0].text
+      value: That old one always talkin'bout me. Don't know what's her deal but unless
+        she mess with my business I don't give a f... sorry, I won't do anything.
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[1].text
+      value: 'I mean... If I ever come to see those two together, it''ll probably
+        be at a boxing ring '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[2].text
+      value: Never saw them together... I hope he stays away from her.
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[3].text
+      value: "Oh man, please let give some of that to her. She would be so much happier\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[4].text
+      value: 'If that could change one''s personality, I''d give her one for free. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[5].text
+      value: 'She always wanted to get closer to <color=#dd0000>George</color> but
+        I don''t even know why. Must be something to do with the fact the she was
+        friend of Ana. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[6].text
+      value: 'He''s a grumpy one, but we''ve been friends since highschool, you know?
+        I helped him when Ana, well, died. And now George''s... Man, that one must
+        be desolated. We went out to drink that night, you know... the day George
+        died. By the way, we crossed with <color=#dd0000>Agatha</color> on the way
+        home. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[7].text
+      value: Used to see him in high school, but we never talked too much. He's too
+        good, you know? He came after me a while ago looking for... ah, some products...
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[8].text
+      value: "That was a pain in the ass, caused me so many troubles. Kinda work
+        with different goods now, you know? Something like... Ah, <color=#dd0000>documented</color>\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[9].text
+      value: 'So... Do we really need to talk ''bout it? I don''t wanna go to jail,
+        you know? I''ve just agreed to talk to you ''cause you''re not a cop or anything '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[10].text
+      value: 'George is the son of my friend. I used to meet him at his house when
+        I... ah, visited his father. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[11].text
+      value: They were pretty close in highschool, but you know... <color=#dd0000>Mark</color>
+        kinda loose the love of his life... Would you blame him for stepping back
+        at their friendship's?
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[12].text
+      value: After Ana's death he came to me looking for drugs... You know, to forget
+        'bout all of that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[13].text
+      value: 'I just never talked to him ''bout it. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[14].text
+      value: He was a good father, most of the time. But there's always someone to
+        amplify things, just like that interfering old busybody of <color=#ff0000>Agatha</color>.
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[15].text
+      value: Well... All I can say is that one surprised me when he came looking
+        for that kind of stuff, and something from my new business...
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[16].text
+      value: 'Funny to ask, he came to see me ''bout that a while ago, you know?
+        Said he needed it to help someone he knew... Never saw him since. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[17].text
+      value: Ana used to take George to Mark's house. He never reached out to Jonathan
+        after Ana and him got married, but never seemed to care'bout her visits.
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[19].text
+      value: "Don't you dare... He would never do that. I mean, not that I would
+        know\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[20].text
+      value: 'He never talked ''bout it with me, not even to break into some parties. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[6].leads.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[14].leads.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 562304261027140994, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[6].leads.Array.data[0]
+      value: 
+      objectReference: {fileID: 2106506213867862499, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+    - target: {fileID: 610376639462640084, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_Name
+      value: Arthur Polaroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 550.8013
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 414
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -309
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -164
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b34e747bb218d4f47833193de5383a7b, type: 3}
+--- !u!224 &377750785 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 610376639462640085, guid: b34e747bb218d4f47833193de5383a7b,
+    type: 3}
+  m_PrefabInstance: {fileID: 377750784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &420841621 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1795377968907071095, guid: cfe8c8e8f754df244a3d09285f8facc8,
@@ -2984,8 +3250,10 @@ RectTransform:
   - {fileID: 848047065}
   - {fileID: 1353941082}
   - {fileID: 2467139244812455418}
+  - {fileID: 377750785}
   - {fileID: 1421828067}
   - {fileID: 1952492755198492901}
+  - {fileID: 3948384535060025983}
   m_Father: {fileID: 2003323134}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4341,11 +4609,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Look... I used to use it. I'm still trying to stop, but it's not easy.
-    After my kid's death it's being harder and harder... I'm going to stop it. And
-    it's not because I'm in this situattion that <b>I'LL KILL MY OWN CHILD. </b>\r</b>\r\nAnd
-    by the way, I'm not the only one who's involved with it. Pretty sure I saw Mark
-    coming out of Arthur's house one of these days."
+  m_text: 'He''s a grumpy one, but we''ve been friends since highschool, you know?
+
+    I
+    helped him when Ana, well, died. And now George''s... Man, that one must be desolated.
+
+    We
+    went out to drink that night, you know... the day George died. By the way, we
+    crossed with <color=#dd0000>Agatha</color> on the way home.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aec4e63c40139334080f4d166b2dcc52, type: 2}
   m_sharedMaterial: {fileID: 4157727920762683012, guid: aec4e63c40139334080f4d166b2dcc52,
@@ -8248,7 +8521,7 @@ PrefabInstance:
     - target: {fileID: 178952338492648576, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 178952338492648576, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}
@@ -8401,7 +8674,7 @@ PrefabInstance:
     - target: {fileID: 2156791008042846830, guid: 09a721cd2d86944408d5c8c1d13d26da,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2156791008042846830, guid: 09a721cd2d86944408d5c8c1d13d26da,
         type: 3}
@@ -8895,6 +9168,125 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd9b1ccab74a3514983b36d5cf4b4213, type: 3}
+--- !u!1001 &3166218473233263517
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 794654400}
+    m_Modifications:
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 550.8013
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 414
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -309
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -164
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2106506213867862499, guid: d6a425f871f74494c9f37e2b36bb16ee,
+        type: 3}
+      propertyPath: m_Name
+      value: Agatha Polaroid
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d6a425f871f74494c9f37e2b36bb16ee, type: 3}
 --- !u!114 &3227388690637574577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8939,6 +9331,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   note: {fileID: 108417195}
   distance: {x: 0, y: 40}
+--- !u!224 &3948384535060025983 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2106506213867862498, guid: d6a425f871f74494c9f37e2b36bb16ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 3166218473233263517}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4634246542073345206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6223810199340599715, guid: 27b9ca8dd7be38c4d84e4a13d7df04dd,
