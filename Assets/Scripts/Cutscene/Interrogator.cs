@@ -11,6 +11,7 @@ namespace Assets.Scripts.Cutscene
         public static Interrogator Instance;
         public LinkedEvidence currentLinkedEvidence;
         public GameObject buttonToInterrogate;
+        public GameObject tutoText;
 
         int currentQuestions = 0;
 
@@ -25,6 +26,7 @@ namespace Assets.Scripts.Cutscene
         {
             buttonToInterrogate.SetActive(true);
             currentLinkedEvidence = linkedEvidence;
+            tutoText.SetActive(false);
         }
 
         public void InterrogateWithEvidences()
@@ -58,6 +60,7 @@ namespace Assets.Scripts.Cutscene
         public void RemoveLink()
         {
             buttonToInterrogate.SetActive(false);
+            tutoText.SetActive(true);
             currentLinkedEvidence = null;
         }
     }

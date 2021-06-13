@@ -46,12 +46,12 @@ namespace Assets.Scripts.Cutscene
 
     public enum Evidence
     {
-        Joao,
-        Vizinha,
-        Claudio,
-        AmigoSuspeito,
+        Agatha,
+        Arthur,
+        Johnatan,
+        Mark,
         Dorgas,
         DocumentosFalsos,
-        Sarah
+        George 
     }
 }
