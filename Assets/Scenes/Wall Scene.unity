@@ -8948,16 +8948,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sound System
       objectReference: {fileID: 0}
-    - target: {fileID: 2482118335687700485, guid: cd9b1ccab74a3514983b36d5cf4b4213,
-        type: 3}
-      propertyPath: clickPhoto
-      value: 
-      objectReference: {fileID: 8300000, guid: 2ca7ab199a96ea547adab8e145362f31, type: 3}
-    - target: {fileID: 2482118335687700485, guid: cd9b1ccab74a3514983b36d5cf4b4213,
-        type: 3}
-      propertyPath: releasePhoto
-      value: 
-      objectReference: {fileID: 8300000, guid: 5b856f4d97160fe4e84d29872a68b953, type: 3}
     - target: {fileID: 2482118335687700538, guid: cd9b1ccab74a3514983b36d5cf4b4213,
         type: 3}
       propertyPath: m_RootOrder
@@ -9012,11 +9002,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2482118335687700539, guid: cd9b1ccab74a3514983b36d5cf4b4213,
-        type: 3}
-      propertyPath: m_Volume
-      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd9b1ccab74a3514983b36d5cf4b4213, type: 3}
