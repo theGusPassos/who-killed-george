@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Assets.Scripts.Sound;
+using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts.Calendar
@@ -27,6 +28,7 @@ namespace Assets.Scripts.Calendar
                 buttonToGiveUp.SetActive(true);
             }
 
+            Djzada.Instance.CountNextDay();
             SetRemainingDays(placesToMark.Length - currentMarker - 1);
             Instantiate(marker, placesToMark[currentMarker++].transform.position, Quaternion.identity, transform);
         }

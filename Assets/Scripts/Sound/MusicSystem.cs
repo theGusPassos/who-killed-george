@@ -7,13 +7,16 @@ namespace Assets.Scripts.Sound
     {
         public static MusicSystem Instance;
 
-        [SerializeField] private AudioClip mainTheme;
         [SerializeField] private float musicSpeed;
-
         private AudioSource[] musicSources;
+
         private int current = 0;
-        private int changing = 0;
-        private bool changingMusic = false;
+        private int changing = 1;
+
+        bool startedPlaying;
+
+        AudioSource toReduce;
+        AudioSource toIncrease;
 
         private void Awake()
         {
@@ -27,29 +30,30 @@ namespace Assets.Scripts.Sound
 
             DontDestroyOnLoad(gameObject);
 
+            current = 0;
             musicSources = GetComponents<AudioSource>();
-            musicSources[current].clip = mainTheme;
-            musicSources[current].Play();
+            musicSources[changing].volume = 0; 
         }
 
         private void Update()
         {
-            if (changingMusic)
-            {
-                musicSources[changing].volume -= musicSpeed * Time.deltaTime;
-                musicSources[current].volume += musicSpeed * Time.deltaTime;
+            if (toReduce != null && toReduce.volume > 0)
+                toReduce.volume -= Time.deltaTime * musicSpeed;
 
-                if (musicSources[changing].volume <= 0 && musicSources[current].volume >= 1)
-                {
-                    changingMusic = false;
-                }
-            }
+            if (toIncrease != null && toIncrease.volume < 1)
+                toIncrease.volume += Time.deltaTime * musicSpeed;
         }
 
-        public void PlayMusic(AudioClip music)
+        public void PlayNextMusic()
         {
-            musicSources[current].clip = music;
-            musicSources[current].Play();
+            toIncrease = musicSources[current];
+
+            if (current > 0)
+            {
+                toReduce = musicSources[current - 1];
+            }
+
+            current++;
         }
     }
 }
