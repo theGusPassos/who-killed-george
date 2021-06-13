@@ -1006,8 +1006,18 @@ MonoBehaviour:
     leads: []
   - e1: 5
     e2: 6
-    text: "Yes. I needed documents, I needed it for him. I had to get George out
-      of his father hands before\u2026 uh. <i>Why is that happening?</i>"
+    text: "Yes. I needed documents, I needed it for him. I had to get <color=#dd0000>George</color>
+      out of his father hands before\u2026 uh. <i>Why is that happening?</i>   In
+      fact I always loved Ana and tried to protect <color=#dd0000>George</color>
+      from <color=#dd0000>Jonathan's</color> hand with all that I had. I already
+      knew that he is an abusive father and used to spank <color=#dd0000>George</color>
+      due to his sexual preferences or even just for his disobidience.  I've tried
+      to use some false documents to go out of this country with <color=#dd0000>George</color>,
+      but I couldn't do it before have my revenge against <color=#dd0000>Jonathan's</color>.
+      When I entered his house to kill him and leave with <color=#dd0000>George</color>,
+      the boy surprised me and in a reflex move I accidentaly killed him.  Until
+      now I can't stop this guilt feeling, so please, now that you know the whole
+      story, do what must be done..."
     objectWithEffects:
     - {fileID: 2023909599536144418, guid: 6cfc0c488e480024bafa47edcc6b06f2, type: 3}
     leads: []

@@ -481,7 +481,7 @@ MonoBehaviour:
     e2: 1
     text: He's into some shady business, isn't he? The type of people I see this
       kid walking around with just smell something bad. Did you tried ask him about
-      the drugs he sells?
+      the <color=#dd0000>drugs</color> he sells?
     objectWithEffects: []
     leads:
     - {fileID: 6912868731924998915, guid: c81b7b50b5aafa2438f6758cbfca3dfd, type: 3}
