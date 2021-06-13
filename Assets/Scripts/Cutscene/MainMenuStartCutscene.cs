@@ -67,7 +67,7 @@ namespace Assets.Scripts.Cutscene
         {
             if (canStartGame && Input.anyKeyDown)
             {
-                SceneLoader.Instance.LoadScene("Wall Scene");
+                SceneLoader.Instance.LoadScene("Start Cutscene");
             }
         }
     }

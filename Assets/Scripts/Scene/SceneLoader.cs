@@ -33,6 +33,7 @@ namespace Assets.Scripts.Scene
 
         private void OnLevelWasLoaded(int level)
         {
+            transition = GetComponentInChildren<Animator>();
             transition.Play("fade-in");
         }
 
