@@ -9,6 +9,7 @@ namespace Assets.Scripts.Options
         public void OnPointerDown(PointerEventData eventData)
         {
             ClickSystem.Instance.PlayClick();
+            print("quit");
             Application.Quit();
         }
     }
