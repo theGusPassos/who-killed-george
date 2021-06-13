@@ -1,6 +1,7 @@
 ﻿using Assets.Scripts.Actions;
 using Assets.Scripts.Calendar;
 using Assets.Scripts.Cutscene.Setters;
+using System.Collections;
 using UnityEngine;
 
 namespace Assets.Scripts.Cutscene
@@ -16,6 +17,9 @@ namespace Assets.Scripts.Cutscene
         int currentQuestions = 0;
 
         [SerializeField] TextShower textShower;
+        [SerializeField] CanvasGroup dayCutscene;
+        [SerializeField] float timeToFade;
+        float timer;
 
         private void Awake()
         {
@@ -44,12 +48,41 @@ namespace Assets.Scripts.Cutscene
             textShower.ShowText(currentLinkedEvidence.text);
         }
 
+        IEnumerator FadeInDayCutscene()
+        {
+            while (dayCutscene.alpha < 1)
+            {
+                timer += Time.deltaTime;
+
+                dayCutscene.alpha = Mathf.Lerp(0, 1, timer / timeToFade);
+
+                yield return new WaitForEndOfFrame();
+            }
+
+            timer = 0;
+            yield return new WaitForSeconds(0.5f);
+
+            StartCoroutine(FadeOutDayCutscene());
+        }
+
+        IEnumerator FadeOutDayCutscene()
+        {
+            while (dayCutscene.alpha > 0)
+            {
+                timer += Time.deltaTime;
+
+                dayCutscene.alpha = Mathf.Lerp(1, 0, timer / timeToFade);
+
+                yield return new WaitForEndOfFrame();
+            }
+
+            timer = 0;
+        }
+
         public void CleanUp()
         {
             if (currentLinkedEvidence.leads != null && currentLinkedEvidence.leads.Length > 0)
-            {
                 SetPhotosInInterrogation.Instance.AddPhotos(currentLinkedEvidence.leads);
-            }
 
             InterrogationLineCreator.Instance.DestroyLine();
 
@@ -59,6 +92,7 @@ namespace Assets.Scripts.Cutscene
                 SetPhotosInInterrogation.Instance.DestroyAllPhotos();
                 InterrogationStarter.Instance.Finish();
                 DayRoutine.Instance.MarkNext();
+                StartCoroutine(FadeInDayCutscene());
             }
         }
 

@@ -22,19 +22,6 @@ namespace Assets.Scripts.Cutscene
                     text = "write on me :)"
                 });
             }
-            //foreach (var e1 in (Evidence[])Enum.GetValues(typeof(Evidence)))
-            //{
-            //    foreach (var e2 in (Evidence[])Enum.GetValues(typeof(Evidence)))
-            //    {
-            //        if (e1 != e2 && GetLinked(e1, e1) == null)
-            //            linkedEvidences.Add(new LinkedEvidence
-            //            {
-            //                e1 = e1,
-            //                e2 = e2,
-            //                text = "write on me :)"
-            //            });
-            //    }
-            //}
         }
 
         public LinkedEvidence GetLinked(Evidence e1, Evidence e2)

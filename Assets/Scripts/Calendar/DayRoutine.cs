@@ -1,4 +1,4 @@
-﻿using Assets.Scripts.Ui;
+﻿using TMPro;
 using UnityEngine;
 
 namespace Assets.Scripts.Calendar
@@ -12,10 +12,12 @@ namespace Assets.Scripts.Calendar
         int currentMarker;
 
         [SerializeField] GameObject buttonToGiveUp;
+        [SerializeField] TextMeshProUGUI textMeshPro;
 
         private void Awake()
         {
             Instance = this;
+            SetRemainingDays(placesToMark.Length - currentMarker - 1);
         }
 
         public void MarkNext()
@@ -25,7 +27,13 @@ namespace Assets.Scripts.Calendar
                 buttonToGiveUp.SetActive(true);
             }
 
+            SetRemainingDays(placesToMark.Length - currentMarker - 1);
             Instantiate(marker, placesToMark[currentMarker++].transform.position, Quaternion.identity, transform);
+        }
+        
+        void SetRemainingDays(int remainingDays)
+        {
+            textMeshPro.text = $"{remainingDays} day{(remainingDays == 1 ? "" : "s")} to the execution";
         }
     }
 }

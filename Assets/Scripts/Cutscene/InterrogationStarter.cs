@@ -94,8 +94,8 @@ namespace Assets.Scripts.Cutscene
             while (canvasGroup.alpha > 0)
             {
                 // reset
-                characterFace.color = new Color(characterFace.color.r, characterFace.color.g, characterFace.color.b, 0);
-                characterNameMesh.color = new Color(255, 255, 255, 0);
+                //characterFace.color = new Color(characterFace.color.r, characterFace.color.g, characterFace.color.b, 0);
+                //characterNameMesh.color = new Color(255, 255, 255, 0);
 
                 timer += Time.deltaTime;
                 canvasGroup.alpha = Mathf.Lerp(1, 0, timer / timeToBackgroundFade);
