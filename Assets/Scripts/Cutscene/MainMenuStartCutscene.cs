@@ -8,7 +8,6 @@ namespace Assets.Scripts.Cutscene
 {
     public class MainMenuStartCutscene : MonoBehaviour
     {
-        public Image logoImage;
         public CanvasGroup credits;
         public TextMeshProUGUI start;
 
@@ -22,30 +21,12 @@ namespace Assets.Scripts.Cutscene
 
         private void Awake()
         {
-            logoImage.color -= new Color(0, 0, 0, 1);
             credits.alpha = 0;
             start.color -= new Color(0, 0, 0, 1);
         }
 
         private void Start()
         {
-            StartCoroutine(ShowLogo());
-        }
-
-        IEnumerator ShowLogo()
-        {
-            yield return new WaitForSeconds(timeToStartShowing);
-            while (logoImage.color.a < 1)
-            {
-                timer += Time.deltaTime;
-                var color = logoImage.color;
-                color.a = Mathf.Lerp(0, 1, timer / timeToShowLogo);
-                logoImage.color = color;
-
-                yield return new WaitForEndOfFrame();
-            }
-
-            timer = 0;
             StartCoroutine(ShowCredits());
         }
 
@@ -74,7 +55,7 @@ namespace Assets.Scripts.Cutscene
             while (start.color.a < 1)
             {
                 timer += Time.deltaTime;
-                var color = logoImage.color;
+                var color = start.color;
                 color.a = Mathf.Lerp(0, 1, timer / timeToShowImage);
                 start.color = color;
 
