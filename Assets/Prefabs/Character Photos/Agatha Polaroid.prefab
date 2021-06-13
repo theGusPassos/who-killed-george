@@ -479,110 +479,138 @@ MonoBehaviour:
   linkedEvidences:
   - e1: 0
     e2: 1
-    text: write on me :)
+    text: He's into some shady business, isn't he? The type of people I see this
+      kid walking around with just smell something bad. Did you tried ask him about
+      the drugs he sells?
     objectWithEffects: []
-    leads: []
+    leads:
+    - {fileID: 6912868731924998915, guid: c81b7b50b5aafa2438f6758cbfca3dfd, type: 3}
   - e1: 0
     e2: 2
-    text: write on me :)
+    text: "Oh, he is the worst. He's so annoying and abusive towards his family,
+      it's a shame that Ana ended up with him instead of <color=#ff0000>Mark</color>.
+      And all that talking about me seeing him in the night of the incident\u2026
+      well, I can't recall that. "
     objectWithEffects: []
-    leads: []
+    leads:
+    - {fileID: 7886612481408476685, guid: 9c55eccd4923b754d9082e1a9dd5af63, type: 3}
   - e1: 0
     e2: 3
-    text: write on me :)
+    text: He's lovely, since he was a kid. I remember getting flowers in mother's
+      day directly from him.
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 4
-    text: write on me :)
+    text: 'I never have and never will. '
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 5
-    text: write on me :)
+    text: Why would I need that if I have everything I need right here? A big house
+      with a perfect bedroom. A garden that's beautiful in the spring and keeps me
+      active throughout the year. There's a gorgeous park right next to my house
+      where I can walk. I know everybody in this neighborhood, that by the way has
+      been getting more and more dangerous, just the other day I was going to the
+      grocer, and...
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 6
-    text: write on me :)
+    text: "I wish I could have more contact with him\u2026 I used to visit when his
+      mother was around, but without her that prick just won't let me enter."
     objectWithEffects: []
     leads: []
   - e1: 1
     e2: 2
-    text: 'He''s a grumpy one, but we''ve been friends since highschool, you know?
-      I helped him when Ana, well, died. And now George''s... Man, that one must
-      be desolated. We went out to drink that night, you know... the day George died.
-      By the way, we crossed with <color=#dd0000>Agatha</color> on the way home. '
+    text: Well, all the neighbours know they are not good people. I think they get
+      together to find better things to smoke.
     objectWithEffects: []
     leads: []
   - e1: 1
     e2: 3
-    text: write on me :)
+    text: I don't think they have anyth- Oh, they did studied together in highschool.
+      That's all I know.
     objectWithEffects: []
     leads: []
   - e1: 1
     e2: 4
-    text: write on me :)
+    text: 'He definitly is related to it. I''m sure. '
     objectWithEffects: []
     leads: []
   - e1: 1
     e2: 5
-    text: write on me :)
+    text: "Hmm\u2026 I don't know. "
     objectWithEffects: []
     leads: []
   - e1: 1
     e2: 6
-    text: write on me :)
+    text: "Hmmm\u2026 Look, one day I was sneaking into George's house to see how
+      things were going - you know, Ana was not there and I could not let the kid
+      alone. I did see Arthur there with him, but they didn't seem to be doing anything
+      wrong. Well\u2026 I do have the keys, but Ana gave it to me a long time ago
+      and I've been using it to help in any way necessary. "
     objectWithEffects: []
     leads: []
   - e1: 2
     e2: 3
-    text: write on me :)
+    text: "They used to hang out in school. I remember those days, it was way easier
+      for me to hit the grocery store. I can't imagine how it would be if they didn't
+      have open that one across the street\u2026 The way my legs hurt aft- well,
+      ok. About them, they were in love with Ana in that time. I wish she had chosen
+      Mark. "
     objectWithEffects: []
     leads: []
   - e1: 2
     e2: 4
-    text: write on me :)
+    text: 'Jonathan used to drug himself so much he was definitely the cause for
+      his wife''s death by suicide. Yeah, you didn''t knew that? You''re trying to
+      save this kind of people from the God''s justice. '
     objectWithEffects: []
     leads: []
   - e1: 2
     e2: 5
-    text: write on me :)
+    text: 'Not sure about that. But if it''s something bad he might be related to
+      it. '
     objectWithEffects: []
     leads: []
   - e1: 2
     e2: 6
-    text: write on me :)
+    text: "Jonathan was abusive towards his family\u2026 Poor George, poor Ana.  "
     objectWithEffects: []
     leads: []
   - e1: 3
     e2: 4
-    text: write on me :)
+    text: 'I don''t believe someone as kind and precious as him would do such thing. '
     objectWithEffects: []
     leads: []
   - e1: 3
     e2: 5
-    text: write on me :)
+    text: 'Well... Can''t say a word about that. '
     objectWithEffects: []
     leads: []
   - e1: 3
     e2: 6
-    text: write on me :)
+    text: 'He treated George as his own kid, I remember seeing them playing together.
+      They loved strategizing plans to do things unseen, just like ninjas as George
+      used to say. '
     objectWithEffects: []
     leads: []
   - e1: 4
     e2: 5
-    text: write on me :)
+    text: Say what?
     objectWithEffects: []
     leads: []
   - e1: 4
     e2: 6
-    text: write on me :)
+    text: 'Oh god, I hope not. He was just a teenager. Well these days are way different
+      from my time but still - I did saw him with Arthur, but it didn''t seemed like
+      it. '
     objectWithEffects: []
     leads: []
   - e1: 5
     e2: 6
-    text: write on me :)
+    text: 'Why a kid would need that? '
     objectWithEffects: []
     leads: []
 --- !u!1 &1337035635057390219
@@ -755,7 +783,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106506213867862499}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:

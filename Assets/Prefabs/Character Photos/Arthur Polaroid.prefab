@@ -102,9 +102,10 @@ MonoBehaviour:
   - e1: 1
     e2: 4
     text: "That was a pain in the ass, caused me so many troubles. Kinda work with
-      different goods now, you know? Something like... Ah, <color=#dd0000>documented</color>\u2026"
+      different goods now, you know? Something like... Ah, <color=#dd0000>with documents</color>\u2026 "
     objectWithEffects: []
-    leads: []
+    leads:
+    - {fileID: 5827533725315211318, guid: 7a7eaea5ab0c9524eb1039db8905a917, type: 3}
   - e1: 1
     e2: 5
     text: 'So... Do we really need to talk ''bout it? I don''t wanna go to jail,
@@ -140,7 +141,8 @@ MonoBehaviour:
     text: He was a good father, most of the time. But there's always someone to amplify
       things, just like that interfering old busybody of <color=#ff0000>Agatha</color>.
     objectWithEffects: []
-    leads: []
+    leads:
+    - {fileID: 2106506213867862499, guid: d6a425f871f74494c9f37e2b36bb16ee, type: 3}
   - e1: 3
     e2: 4
     text: Well... All I can say is that one surprised me when he came looking for

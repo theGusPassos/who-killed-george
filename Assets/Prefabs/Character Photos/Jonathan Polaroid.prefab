@@ -812,10 +812,12 @@ MonoBehaviour:
     text: Look... I used to use it. I'm still trying to stop, but it's not easy.
       After my kid's death it's being harder and harder... I'm going to stop it.
       And it's not because I'm in this situattion that <b>I'LL KILL MY OWN CHILD.
-      </b> </b> And by the way, I'm not the only one who's involved with it. Pretty
-      sure I saw Mark coming out of Arthur's house one of these days.
+      </b> And by the way, I'm not the only one who's involved with it. Pretty sure
+      I saw <color=#dd0000>Mark</color> coming out of Arthur's house one of these
+      days.
     objectWithEffects: []
-    leads: []
+    leads:
+    - {fileID: 7886612481408476685, guid: 9c55eccd4923b754d9082e1a9dd5af63, type: 3}
   - e1: 2
     e2: 5
     text: 'Why would I need fake IDs? '
