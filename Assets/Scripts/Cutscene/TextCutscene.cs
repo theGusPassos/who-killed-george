@@ -8,9 +8,14 @@ namespace Assets.Scripts.Cutscene
     public class TextCutscene : MonoBehaviour
     {
         [SerializeField] TextMeshProUGUI[] textMeshs;
+        [SerializeField] float timeToStart;
         [SerializeField] float fadeTime;
         [SerializeField] float timeBetweenTexts;
+        [SerializeField] string sceneToLoad;
+
+        float countingTimeBetweenTexts;
         bool canStart = false;
+        int currentText;
 
         float timer;
 
@@ -22,14 +27,32 @@ namespace Assets.Scripts.Cutscene
         private void Update()
         {
             if (canStart)
+            {
                 if (Input.anyKeyDown)
-                    SceneLoader.Instance.LoadScene("Wall Scene");
+                    SceneLoader.Instance.LoadScene(sceneToLoad);
+            }
+            else if (Input.anyKeyDown)
+            {
+                // skip
+                if (countingTimeBetweenTexts > 0)
+                {
+                    countingTimeBetweenTexts = timeBetweenTexts;
+                }
+                else
+                {
+                    var color = textMeshs[currentText].color;
+                    color.a = 1;
+                    textMeshs[currentText].color = color;
+                }
+            }
         }
 
         IEnumerator FadeAndShowText()
         {
-            foreach (var textMesh in textMeshs)
+            yield return new WaitForSeconds(timeToStart);
+            for (int i = 0; i < textMeshs.Length; i++)
             {
+                var textMesh = textMeshs[i];
                 while (textMesh.color.a < 1)
                 {
                     timer += Time.deltaTime;
@@ -39,9 +62,15 @@ namespace Assets.Scripts.Cutscene
 
                     yield return new WaitForEndOfFrame();
                 }
-                
-                yield return new WaitForSeconds(timeBetweenTexts);
 
+                while (countingTimeBetweenTexts < timeBetweenTexts)
+                {
+                    countingTimeBetweenTexts += Time.deltaTime;
+                    yield return new WaitForEndOfFrame();
+                }
+
+                countingTimeBetweenTexts = 0;
+                currentText++;
                 timer = 0;
             }
 
