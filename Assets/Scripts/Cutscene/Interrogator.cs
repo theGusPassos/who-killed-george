@@ -46,6 +46,10 @@ namespace Assets.Scripts.Cutscene
 
             // will play the cutscene here
             textShower.ShowText(currentLinkedEvidence.text);
+
+            if (currentLinkedEvidence.objectWithEffects != null)
+            foreach (var effect in currentLinkedEvidence.objectWithEffects)
+                Instantiate(effect);
         }
 
         IEnumerator FadeInDayCutscene()

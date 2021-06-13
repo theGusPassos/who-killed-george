@@ -5789,7 +5789,7 @@ MonoBehaviour:
     e1: 0
     e2: 0
     text: 
-    objectWithEffects: {fileID: 0}
+    objectWithEffects: []
     leads: []
   buttonToInterrogate: {fileID: 248454733}
   tutoText: {fileID: 207660645}
@@ -8484,7 +8484,7 @@ PrefabInstance:
     - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}
       propertyPath: linkedEvidences.Array.data[14].text
-      value: 'heheh heree youy are mother asdfjasd fasd kskksks dafkdkf abla '
+      value: write on me :)
       objectReference: {fileID: 0}
     - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}
@@ -8494,7 +8494,7 @@ PrefabInstance:
     - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}
       propertyPath: linkedEvidences.Array.data[14].leads.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}
@@ -8516,6 +8516,117 @@ PrefabInstance:
       propertyPath: linkedEvidences.Array.data[14].leads.Array.data[0]
       value: 
       objectReference: {fileID: 1771967758803189627, guid: 63827150a464d704abe69a882a96ab01,
+        type: 3}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[0].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[1].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[2].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[3].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[4].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[5].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[6].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[7].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[8].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[9].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[10].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[11].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[12].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[13].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[14].objectWithEffects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[15].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[16].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[17].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[18].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[19].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[20].objectWithEffects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 994748901321634007, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: linkedEvidences.Array.data[14].objectWithEffects.Array.data[0]
+      value: 
+      objectReference: {fileID: 9170095559646858641, guid: 9e1e161cc8315264bafaba01e842ab82,
         type: 3}
     - target: {fileID: 3494916961329937539, guid: e3b2fc4321a030c4c8b1188354c45798,
         type: 3}

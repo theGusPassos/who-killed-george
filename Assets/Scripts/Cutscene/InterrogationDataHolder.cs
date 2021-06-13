@@ -45,7 +45,7 @@ namespace Assets.Scripts.Cutscene
         public Evidence e1;
         public Evidence e2;
         public string text;
-        public GameObject objectWithEffects;
+        public GameObject[] objectWithEffects;
         public GameObject[] leads;
     }
 
