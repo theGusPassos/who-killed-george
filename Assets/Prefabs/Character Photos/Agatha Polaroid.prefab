@@ -550,7 +550,8 @@ MonoBehaviour:
       alone. I did see Arthur there with him, but they didn't seem to be doing anything
       wrong. Well\u2026 I do have the keys, but Ana gave it to me a long time ago
       and I've been using it to help in any way necessary. "
-    objectWithEffects: []
+    objectWithEffects:
+    - {fileID: 4065283737291085975, guid: 6299869cbd4fab147901e8b01baffab2, type: 3}
     leads: []
   - e1: 2
     e2: 3
@@ -989,10 +990,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factsForCutscene:
-  - cutscene: {fileID: 3031842991352179986, guid: 68326d5bd7b47bf4fb0d0f2cb08dd95c,
+  - cutscene: {fileID: 1072841682104401596, guid: d987323f35d1f7b4592c148e78091119,
       type: 3}
-    factsNecessary: 00000000
-  - cutscene: {fileID: 4002401467696515853, guid: 11792c283ad4b9242968d09043dc30d4,
+    factsNecessary: 01000000
+  - cutscene: {fileID: 5456930147400050555, guid: f670f4a41c1241442827f71577e9714a,
       type: 3}
     factsNecessary: 
 --- !u!1 &3440860599204961380

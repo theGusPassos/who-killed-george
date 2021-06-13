@@ -129,7 +129,8 @@ MonoBehaviour:
     e2: 4
     text: After Ana's death he came to me looking for drugs... You know, to forget
       'bout all of that.
-    objectWithEffects: []
+    objectWithEffects:
+    - {fileID: 284580225843325822, guid: 3f23617a7a0bb4247b72b25bca8076ec, type: 3}
     leads: []
   - e1: 2
     e2: 5

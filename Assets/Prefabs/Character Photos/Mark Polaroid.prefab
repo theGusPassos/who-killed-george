@@ -1008,7 +1008,8 @@ MonoBehaviour:
     e2: 6
     text: "Yes. I needed documents, I needed it for him. I had to get George out
       of his father hands before\u2026 uh. <i>Why is that happening?</i>"
-    objectWithEffects: []
+    objectWithEffects:
+    - {fileID: 2023909599536144418, guid: 6cfc0c488e480024bafa47edcc6b06f2, type: 3}
     leads: []
 --- !u!1 &7117704648574321641
 GameObject:
@@ -1678,9 +1679,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   factsForCutscene:
-  - cutscene: {fileID: 3031842991352179986, guid: 68326d5bd7b47bf4fb0d0f2cb08dd95c,
+  - cutscene: {fileID: 6891637022492544144, guid: e3d0fd28b472dae45a54bb33b86d518c,
       type: 3}
-    factsNecessary: 00000000
-  - cutscene: {fileID: 4002401467696515853, guid: 11792c283ad4b9242968d09043dc30d4,
+    factsNecessary: 02000000
+  - cutscene: {fileID: 9027731680924448827, guid: 8d88cefc6c8cef543818dddb34852981,
       type: 3}
     factsNecessary: 
