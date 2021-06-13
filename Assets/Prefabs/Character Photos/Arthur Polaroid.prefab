@@ -52,98 +52,111 @@ MonoBehaviour:
   linkedEvidences:
   - e1: 0
     e2: 1
-    text: write on me :)
+    text: That old one always talkin'bout me. Don't know what's her deal but unless
+      she mess with my business I don't give a f... sorry, I won't do anything.
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 2
-    text: write on me :)
+    text: 'I mean... If I ever come to see those two together, it''ll probably be
+      at a boxing ring '
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 3
-    text: write on me :)
+    text: Never saw them together... I hope he stays away from her.
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 4
-    text: write on me :)
+    text: "Oh man, please let give some of that to her. She would be so much happier\u2026 "
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 5
-    text: write on me :)
+    text: 'If that could change one''s personality, I''d give her one for free. '
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 6
-    text: write on me :)
+    text: 'She always wanted to get closer to <color=#dd0000>George</color> but I
+      don''t even know why. Must be something to do with the fact the she was friend
+      of Ana. '
     objectWithEffects: []
     leads: []
   - e1: 1
     e2: 2
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 1
-    e2: 3
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 1
-    e2: 4
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 1
-    e2: 5
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 1
-    e2: 6
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 2
-    e2: 3
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 2
-    e2: 4
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 2
-    e2: 5
-    text: write on me :)
-    objectWithEffects: []
-    leads: []
-  - e1: 2
-    e2: 6
-    text: George, my lovely son... My heart aches thinking about life without him.
-      He was obedient as a kid, his teenage years were harder as he became - well,
-      maybe a little more rebel. Sometimes things might have gone a little out of
-      control, but I still never stopped loving him. <br><br> I want justice for
-      what's been done to him, it wasn't me and no one can prove otherwise. I was
-      with <color=#dd0000>Arthur</color> in the night he was murdered...
+    text: 'He''s a grumpy one, but we''ve been friends since highschool, you know?
+      I helped him when Ana, well, died. And now George''s... Man, that one must
+      be desolated. We went out to drink that night, you know... the day George died.
+      By the way, we crossed with <color=#dd0000>Agatha</color> on the way home. '
     objectWithEffects: []
     leads:
-    - {fileID: 4036105479000489009, guid: b34e747bb218d4f47833193de5383a7b, type: 3}
+    - {fileID: 2106506213867862499, guid: d6a425f871f74494c9f37e2b36bb16ee, type: 3}
+  - e1: 1
+    e2: 3
+    text: Used to see him in high school, but we never talked too much. He's too
+      good, you know? He came after me a while ago looking for... ah, some products...
+    objectWithEffects: []
+    leads: []
+  - e1: 1
+    e2: 4
+    text: "That was a pain in the ass, caused me so many troubles. Kinda work with
+      different goods now, you know? Something like... Ah, <color=#dd0000>documented</color>\u2026"
+    objectWithEffects: []
+    leads: []
+  - e1: 1
+    e2: 5
+    text: 'So... Do we really need to talk ''bout it? I don''t wanna go to jail,
+      you know? I''ve just agreed to talk to you ''cause you''re not a cop or anything '
+    objectWithEffects: []
+    leads: []
+  - e1: 1
+    e2: 6
+    text: 'George is the son of my friend. I used to meet him at his house when I...
+      ah, visited his father. '
+    objectWithEffects: []
+    leads: []
+  - e1: 2
+    e2: 3
+    text: They were pretty close in highschool, but you know... <color=#dd0000>Mark</color>
+      kinda loose the love of his life... Would you blame him for stepping back at
+      their friendship's?
+    objectWithEffects: []
+    leads: []
+  - e1: 2
+    e2: 4
+    text: After Ana's death he came to me looking for drugs... You know, to forget
+      'bout all of that.
+    objectWithEffects: []
+    leads: []
+  - e1: 2
+    e2: 5
+    text: 'I just never talked to him ''bout it. '
+    objectWithEffects: []
+    leads: []
+  - e1: 2
+    e2: 6
+    text: He was a good father, most of the time. But there's always someone to amplify
+      things, just like that interfering old busybody of <color=#ff0000>Agatha</color>.
+    objectWithEffects: []
+    leads: []
   - e1: 3
     e2: 4
-    text: write on me :)
+    text: Well... All I can say is that one surprised me when he came looking for
+      that kind of stuff, and something from my new business...
     objectWithEffects: []
     leads: []
   - e1: 3
     e2: 5
-    text: write on me :)
+    text: 'Funny to ask, he came to see me ''bout that a while ago, you know? Said
+      he needed it to help someone he knew... Never saw him since. '
     objectWithEffects: []
     leads: []
   - e1: 3
     e2: 6
-    text: write on me :)
+    text: Ana used to take George to Mark's house. He never reached out to Jonathan
+      after Ana and him got married, but never seemed to care'bout her visits.
     objectWithEffects: []
     leads: []
   - e1: 4
@@ -153,12 +166,12 @@ MonoBehaviour:
     leads: []
   - e1: 4
     e2: 6
-    text: write on me :)
+    text: "Don't you dare... He would never do that. I mean, not that I would know\u2026 "
     objectWithEffects: []
     leads: []
   - e1: 5
     e2: 6
-    text: write on me :)
+    text: 'He never talked ''bout it with me, not even to break into some parties. '
     objectWithEffects: []
     leads: []
 --- !u!1 &562304261111890620
@@ -758,7 +771,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 610376639462640084}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children:
