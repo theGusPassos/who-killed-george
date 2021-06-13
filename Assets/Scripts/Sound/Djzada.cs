@@ -22,7 +22,11 @@ namespace Assets.Scripts.Sound
             MusicSystem.Instance.PlayNextMusic();
         }
 
-        public void ResetMusic() => StartFirstMusic();
+        public void ResetMusic()
+        {
+            currentMusic = 1;
+            MusicSystem.Instance.PlayFirstMusic();
+        }
 
         public void CountNextDay()
         {

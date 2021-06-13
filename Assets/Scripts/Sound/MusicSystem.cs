@@ -44,6 +44,14 @@ namespace Assets.Scripts.Sound
                 toIncrease.volume += Time.deltaTime * musicSpeed;
         }
 
+        public void PlayFirstMusic()
+        {
+            toIncrease = musicSources[0];
+            toReduce = musicSources[musicSources.Length - 1];
+
+            current = 1;
+        }
+
         public void PlayNextMusic()
         {
             toIncrease = musicSources[current];
