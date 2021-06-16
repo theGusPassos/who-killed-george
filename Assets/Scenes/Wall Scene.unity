@@ -2958,7 +2958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e5b37f9438e3147a56c1daec6591af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayCountToChangeMusic: 0000000064000000c8000000c8000000c8000000c8000000c8000000c8000000d2070000c8000000
+  dayCountToChangeMusic: 010000000200000003000000040000000500000006000000
 --- !u!114 &786027926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9076,34 +9076,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2137846128, guid: 0af05980bbc92f144bee887ec0b9fc19, type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 370959909525027247, guid: 0af05980bbc92f144bee887ec0b9fc19,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1048580246218919943, guid: 0af05980bbc92f144bee887ec0b9fc19,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3888688660302232589, guid: 0af05980bbc92f144bee887ec0b9fc19,
-        type: 3}
-      propertyPath: Loop
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5824901704373381834, guid: 0af05980bbc92f144bee887ec0b9fc19,
         type: 3}
       propertyPath: m_Name
       value: Music System
-      objectReference: {fileID: 0}
-    - target: {fileID: 5824901704373381876, guid: 0af05980bbc92f144bee887ec0b9fc19,
-        type: 3}
-      propertyPath: Loop
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5824901704373381877, guid: 0af05980bbc92f144bee887ec0b9fc19,
         type: 3}
@@ -9159,11 +9135,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6593183998274538602, guid: 0af05980bbc92f144bee887ec0b9fc19,
-        type: 3}
-      propertyPath: Loop
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0af05980bbc92f144bee887ec0b9fc19, type: 3}

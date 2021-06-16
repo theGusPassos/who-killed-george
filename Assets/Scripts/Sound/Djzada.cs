@@ -16,7 +16,7 @@ namespace Assets.Scripts.Sound
             Instance = this;
         }
 
-        public void StartFirstMusic()
+          public void StartFirstMusic()
         {
             currentMusic = 1;
             MusicSystem.Instance.PlayNextMusic();
@@ -31,6 +31,8 @@ namespace Assets.Scripts.Sound
         public void CountNextDay()
         {
             currentDayCounted++;
+
+            if (currentMusic < dayCountToChangeMusic.Length - 1)
             if (currentDayCounted >= dayCountToChangeMusic[currentMusic])
             {
                 MusicSystem.Instance.PlayNextMusic();

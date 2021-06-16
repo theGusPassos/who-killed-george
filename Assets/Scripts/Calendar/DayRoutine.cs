@@ -23,12 +23,6 @@ namespace Assets.Scripts.Calendar
             SetRemainingDays(placesToMark.Length - currentMarker - 1);
         }
 
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.N))
-                MarkNext();
-        }
-
         public void MarkNext()
         {
             if (currentMarker == placesToMark.Length - 1)
@@ -55,7 +49,7 @@ namespace Assets.Scripts.Calendar
 
         void SetRemainingDays(int remainingDays)
         {
-            textMeshPro.text = $"{remainingDays} day{(remainingDays == 1 ? "" : "s")} to the execution";
+            textMeshPro.text = $"{remainingDays} day{(remainingDays == 1 ? "" : "s")} until execution";
         }
     }
 }
