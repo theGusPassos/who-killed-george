@@ -20,11 +20,19 @@ namespace Assets.Scripts.Sound
 
         private void Awake()
         {
+            if (Instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+
             Instance = this;
 
             current = 0;
             musicSources = GetComponents<AudioSource>();
-            musicSources[changing].volume = 0; 
+            musicSources[changing].volume = 0;
+
+            DontDestroyOnLoad(gameObject);
         }
 
         private void Update()
