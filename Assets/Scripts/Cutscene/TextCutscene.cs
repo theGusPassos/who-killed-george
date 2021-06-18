@@ -1,5 +1,4 @@
 ﻿using Assets.Scripts.Scene;
-using System.Collections;
 using TMPro;
 using UnityEngine;
 
@@ -13,7 +12,6 @@ namespace Assets.Scripts.Cutscene
         [SerializeField] float timeBetweenTexts;
         [SerializeField] string sceneToLoad;
 
-        float countingTimeBetweenTexts;
         bool canStart = false;
         int currentText;
 
@@ -22,7 +20,6 @@ namespace Assets.Scripts.Cutscene
         private void Awake()
         {
             textMeshs = GetComponentsInChildren<TextMeshProUGUI>();
-            StartCoroutine(FadeAndShowText());
         }
 
         private void Update()
@@ -32,50 +29,34 @@ namespace Assets.Scripts.Cutscene
                 if (Input.anyKeyDown)
                     SceneLoader.Instance.LoadScene(sceneToLoad);
             }
-            else if (Input.anyKeyDown)
+            else
             {
-                // skip
-                if (countingTimeBetweenTexts > 0)
+                var textMesh = textMeshs[currentText];
+
+                timer += Time.deltaTime;
+                var color = textMesh.color;
+                color.a = Mathf.Lerp(0, 1, timer / fadeTime);
+                textMesh.color = color;
+
+                if (color.a >= 1)
                 {
-                    countingTimeBetweenTexts = timeBetweenTexts;
+                    currentText++;
+                    timer = 0;
+
+                    if (currentText == textMeshs.Length)
+                    {
+                        canStart = true;
+                    }
                 }
-                else
+
+                if (Input.anyKeyDown)
                 {
-                    var color = textMeshs[currentText].color;
-                    color.a = 1;
-                    textMeshs[currentText].color = color;
+                    // skip
+                    var fullAlpha = textMeshs[currentText].color;
+                    fullAlpha.a = 1;
+                    textMeshs[currentText].color = fullAlpha;
                 }
             }
-        }
-
-        IEnumerator FadeAndShowText()
-        {
-            yield return new WaitForSeconds(timeToStart);
-            for (int i = 0; i < textMeshs.Length; i++)
-            {
-                var textMesh = textMeshs[i];
-                while (textMesh.color.a < 1)
-                {
-                    timer += Time.deltaTime;
-                    var color = textMesh.color;
-                    color.a = Mathf.Lerp(0, 1, timer / fadeTime);
-                    textMesh.color = color;
-
-                    yield return new WaitForEndOfFrame();
-                }
-
-                while (countingTimeBetweenTexts < timeBetweenTexts)
-                {
-                    countingTimeBetweenTexts += Time.deltaTime;
-                    yield return new WaitForEndOfFrame();
-                }
-
-                countingTimeBetweenTexts = 0;
-                currentText++;
-                timer = 0;
-            }
-
-            canStart = true;
         }
     }
 }
