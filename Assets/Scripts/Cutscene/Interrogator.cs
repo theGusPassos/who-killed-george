@@ -87,7 +87,7 @@ namespace Assets.Scripts.Cutscene
         public void CleanUp()
         {
             if (currentLinkedEvidence.leads != null && currentLinkedEvidence.leads.Length > 0)
-                SetPhotosInInterrogation.Instance.AddPhotos(currentLinkedEvidence.leads);
+                SetPhotosInInterrogation.Instance.AddPhotosInInterrogation(currentLinkedEvidence.leads);
 
             InterrogationLineCreator.Instance.DestroyLine();
 

@@ -7,6 +7,7 @@ namespace Assets.Scripts.Actions
     public class LineCreator : MonoBehaviour
     {
         public static LineCreator Instance { get; private set; }
+        [SerializeField] Transform lineFather;
         [SerializeField] GameObject linePrefab;
 
         Line lineInstantiated;
@@ -32,7 +33,7 @@ namespace Assets.Scripts.Actions
 
         public void InstantiateLine(RectTransform originPosition)
         {
-            var objectInstantiated = Instantiate(linePrefab, CanvasHolder.Instance.Canvas.transform);
+            var objectInstantiated = Instantiate(linePrefab, lineFather);
             lineInstantiated = objectInstantiated.GetComponent<Line>();
             lineInstantiated.GetComponent<RectTransform>().localPosition = Vector2.zero;
 
