@@ -32,22 +32,7 @@ namespace Assets.Scripts.Cutscene
             else
             {
                 var textMesh = textMeshs[currentText];
-
-                timer += Time.deltaTime;
                 var color = textMesh.color;
-                color.a = Mathf.Lerp(0, 1, timer / fadeTime);
-                textMesh.color = color;
-
-                if (color.a >= 1)
-                {
-                    currentText++;
-                    timer = 0;
-
-                    if (currentText == textMeshs.Length)
-                    {
-                        canStart = true;
-                    }
-                }
 
                 if (Input.anyKeyDown)
                 {
@@ -56,6 +41,23 @@ namespace Assets.Scripts.Cutscene
                     fullAlpha.a = 1;
                     textMeshs[currentText].color = fullAlpha;
                 }
+
+                if (textMeshs[currentText].color.a >= 1)
+                {
+                    currentText++;
+                    timer = 0;
+
+                    if (currentText == textMeshs.Length)
+                    {
+                        canStart = true;
+                    }
+
+                    return;
+                }
+
+                timer += Time.deltaTime;
+                color.a = Mathf.Lerp(0, 1, timer / fadeTime);
+                textMesh.color = color;
             }
         }
     }

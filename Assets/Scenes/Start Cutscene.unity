@@ -213,11 +213,35 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2137846128, guid: 0af05980bbc92f144bee887ec0b9fc19, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a58a048c219d2d48a00f9abbf7480c2, type: 3}
+    - target: {fileID: 370959909525027247, guid: 0af05980bbc92f144bee887ec0b9fc19,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c758ecb06b0413429a3f75ff09e0aa4, type: 3}
+    - target: {fileID: 1048580246218919943, guid: 0af05980bbc92f144bee887ec0b9fc19,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ed4679b02b33d5d499b20fd69bc663a4, type: 3}
+    - target: {fileID: 3888688660302232589, guid: 0af05980bbc92f144bee887ec0b9fc19,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b2a3de2b7c55b7c449efa1759786d757, type: 3}
     - target: {fileID: 5824901704373381834, guid: 0af05980bbc92f144bee887ec0b9fc19,
         type: 3}
       propertyPath: m_Name
       value: Music System
       objectReference: {fileID: 0}
+    - target: {fileID: 5824901704373381876, guid: 0af05980bbc92f144bee887ec0b9fc19,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2619b259b18ae7443a42b93e6f39da64, type: 3}
     - target: {fileID: 5824901704373381877, guid: 0af05980bbc92f144bee887ec0b9fc19,
         type: 3}
       propertyPath: m_RootOrder
@@ -273,6 +297,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6593183998274538602, guid: 0af05980bbc92f144bee887ec0b9fc19,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: e8429e2e818bb624c857390e58570940, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0af05980bbc92f144bee887ec0b9fc19, type: 3}
 --- !u!1001 &670649872
