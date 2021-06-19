@@ -26,7 +26,7 @@ namespace Assets.Scripts.Cutscene
                 if (allEvidences.Contains(evidence))
                     return;
 
-                var distance = new Vector3(distanceBetween * i, 0);
+                var distance = new Vector3(distanceBetween * (i + leadList.Count - 1), 0);
                 var lead = Instantiate(leads[i], transform.position + distance, Quaternion.identity, CanvasHolder.Instance.Canvas.transform);
                 leadList.Add(lead);
             }
