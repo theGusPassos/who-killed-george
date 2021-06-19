@@ -164,7 +164,8 @@ MonoBehaviour:
     leads: []
   - e1: 4
     e2: 5
-    text: write on me :)
+    text: Well I used to work with <color=#dd0000>drugs</color> but now I only work
+      with <color=#dd0000>documents</color>.
     objectWithEffects: []
     leads: []
   - e1: 4
@@ -997,6 +998,7 @@ GameObject:
   - component: {fileID: 4273419523969429737}
   - component: {fileID: 1053409819210030378}
   - component: {fileID: 8597861327075063548}
+  - component: {fileID: 343822651998789437}
   m_Layer: 8
   m_Name: Polaroid
   m_TagString: Untagged
@@ -1061,6 +1063,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &343822651998789437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2746910128175660367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0ae943767793948b311cac9eee98fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleTo: 1.05
 --- !u!1 &4216435846598243889
 GameObject:
   m_ObjectHideFlags: 0

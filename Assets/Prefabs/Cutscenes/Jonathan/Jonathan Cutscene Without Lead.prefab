@@ -335,7 +335,7 @@ MonoBehaviour:
   timeToStart: 0
   fadeTime: 3
   timeBetweenTexts: 0.5
-  sceneToLoad: Wall Scene
+  sceneToLoad: Main Menu
 --- !u!1 &56460159573475829
 GameObject:
   m_ObjectHideFlags: 0
