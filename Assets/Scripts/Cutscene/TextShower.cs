@@ -6,6 +6,8 @@ namespace Assets.Scripts.Cutscene
 {
     public class TextShower : MonoBehaviour
     {
+        public static TextShower Instance;
+
         [SerializeField] TextMeshProUGUI textMesh;
         CanvasGroup canvasGroup;
 
@@ -16,6 +18,7 @@ namespace Assets.Scripts.Cutscene
 
         private void Awake()
         {
+            Instance = this;
             textMesh = GetComponentInChildren<TextMeshProUGUI>();
             canvasGroup = GetComponent<CanvasGroup>();
         }
@@ -37,6 +40,13 @@ namespace Assets.Scripts.Cutscene
                 hasShown = false;
                 StartCoroutine(FadeOut());
             }
+        }
+
+        public void DoLastQuestion()
+        {
+            Interrogator.Instance.CleanUp();
+            hasShown = false;
+            StartCoroutine(FadeOut());
         }
 
         IEnumerator FadeAndShow()

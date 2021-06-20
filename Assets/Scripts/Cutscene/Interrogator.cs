@@ -84,6 +84,8 @@ namespace Assets.Scripts.Cutscene
             timer = 0;
         }
 
+        public void SetLastQuestion() => currentQuestions = numberOfQuestions;
+
         public void CleanUp()
         {
             if (currentLinkedEvidence.leads != null && currentLinkedEvidence.leads.Length > 0)

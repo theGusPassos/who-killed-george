@@ -404,8 +404,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '<color=#dd0000>Arthur</color> had an affair for <color=#dd0000>George</color>,
     that''s simple. But the feeling that he has been cultivating inside of his own
-    heart, since George was a completely prohibited person and love for him, didn''t
-    grow up well.
+    heart, since <color=#dd0000>George</color> was a completely prohibited person
+    and love for him, didn''t grow up well.
 
 '
   m_isRightToLeft: 0
@@ -647,7 +647,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 181}
+  m_AnchoredPosition: {x: 0, y: 221}
   m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6237408340772386235
@@ -684,7 +684,7 @@ MonoBehaviour:
     used <color=#dd0000>Jonathan''s</color> lack of awareness and went to his house,
     finding <color=#dd0000>George</color> all alone. If he couldn''t be his lover,
     he wouldn''t belong someone else! And then he just killed the boy, coming back
-    to his house without leave any suspect. <color=#dd0000>Jonathan</color> would
+    to his house without leaving any suspect. <color=#dd0000>Jonathan</color> would
     work as his alibi. A perfect plan.
 
 
