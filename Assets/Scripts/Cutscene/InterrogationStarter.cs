@@ -21,6 +21,8 @@ namespace Assets.Scripts.Cutscene
 
         InterrogationDataHolder interrogationData;
 
+        [SerializeField] GameObject accuseButton;
+
         private void Awake()
         {
             if (Instance == null)
@@ -35,6 +37,7 @@ namespace Assets.Scripts.Cutscene
 
         public void StartInterrogation(CharacterData characterData, InterrogationDataHolder interrogationData)
         {
+            accuseButton.SetActive(true);
             SetPhotosInInterrogation.Instance.Set();
             Interrogator.Instance.ShowTextInfo();
             this.interrogationData = interrogationData;

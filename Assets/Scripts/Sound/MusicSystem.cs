@@ -13,10 +13,8 @@ namespace Assets.Scripts.Sound
         private int current = 0;
         private int changing = 1;
 
-        bool startedPlaying;
-
-        AudioSource toReduce;
-        AudioSource toIncrease;
+        int toReduce;
+        int toIncrease;
 
         private void Awake()
         {
@@ -37,28 +35,28 @@ namespace Assets.Scripts.Sound
 
         private void Update()
         {
-            if (toReduce != null && toReduce.volume > 0)
-                toReduce.volume -= Time.deltaTime * musicSpeed;
+            if (musicSources[toReduce] != null && musicSources[toReduce].volume > 0)
+                musicSources[toReduce].volume -= Time.deltaTime * musicSpeed;
 
-            if (toIncrease != null && toIncrease.volume < 1)
-                toIncrease.volume += Time.deltaTime * musicSpeed;
+            if (musicSources[toIncrease] != null && musicSources[toIncrease].volume < 1)
+                musicSources[toIncrease].volume += Time.deltaTime * musicSpeed;
         }
 
         public void PlayFirstMusic()
         {
-            toIncrease = musicSources[0];
-            toReduce = musicSources[musicSources.Length - 1];
+            toIncrease = 0;
+            toReduce = musicSources.Length - 1;
 
             current = 1;
         }
 
         public void PlayNextMusic()
         {
-            toIncrease = musicSources[current];
+            toIncrease = current;
 
             if (current > 0)
             {
-                toReduce = musicSources[current - 1];
+                toReduce = current - 1;
             }
 
             current++;

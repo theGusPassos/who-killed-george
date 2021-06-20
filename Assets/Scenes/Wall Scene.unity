@@ -2125,6 +2125,7 @@ MonoBehaviour:
   timeToFade: 2
   characterFace: {fileID: 1803604722}
   characterNameMesh: {fileID: 950948916}
+  accuseButton: {fileID: 178952339760821092}
 --- !u!224 &475299273 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1795377968907071095, guid: cfe8c8e8f754df244a3d09285f8facc8,
@@ -3114,7 +3115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32e5b37f9438e3147a56c1daec6591af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayCountToChangeMusic: 010000000200000003000000040000000500000006000000
+  dayCountToChangeMusic: 01000000020000000300000004000000050000000600000007000000
 --- !u!114 &786027926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9023,8 +9024,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Jonathan Polaroid
       objectReference: {fileID: 0}
+    - target: {fileID: 994748900491168101, guid: e3b2fc4321a030c4c8b1188354c45798,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3b2fc4321a030c4c8b1188354c45798, type: 3}
+--- !u!1 &178952339760821092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 994748900491168101, guid: e3b2fc4321a030c4c8b1188354c45798,
+    type: 3}
+  m_PrefabInstance: {fileID: 178952339760821091}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &223687440960072948
 RectTransform:
   m_ObjectHideFlags: 0
