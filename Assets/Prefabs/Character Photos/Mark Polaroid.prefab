@@ -901,12 +901,12 @@ MonoBehaviour:
   linkedEvidences:
   - e1: 0
     e2: 1
-    text: 'This is a combination think I''ll never see.  '
+    text: 'This is a combination think I''ll never see, they seem to hate eachother.  '
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 2
-    text: 'Hm... Pretty sure they don''t match.  '
+    text: 'Hm... Pretty sure they don''t match. '
     objectWithEffects: []
     leads: []
   - e1: 0
@@ -918,12 +918,12 @@ MonoBehaviour:
     leads: []
   - e1: 0
     e2: 4
-    text: 'Wow! Forget it, there''s no way.  '
+    text: 'Wow! Forget it, there''s no way she would try that.  '
     objectWithEffects: []
     leads: []
   - e1: 0
     e2: 5
-    text: 'What? What do you want to know about it?  '
+    text: 'What? What do you mean about it? '
     objectWithEffects: []
     leads: []
   - e1: 0
@@ -934,8 +934,9 @@ MonoBehaviour:
     leads: []
   - e1: 1
     e2: 2
-    text: 'He... well, I think Arthur did some bad things in the past and used to
-      sell those things to Jonathan. Probably he''s getting from someone else now. '
+    text: ' He... well, I think <color=#dd0000>Arthur</color> did some bad things
+      in the past and used to sell those things to <color=#dd0000>Jonathan</color>.
+      Probably he''s getting from someone else now.'
     objectWithEffects: []
     leads:
     - {fileID: 6912868731924998915, guid: c81b7b50b5aafa2438f6758cbfca3dfd, type: 3}
@@ -958,9 +959,9 @@ MonoBehaviour:
     leads: []
   - e1: 1
     e2: 6
-    text: 'The kid used to ask me advices about Arthur... They did liked each other,
-      but look at scenario: He''s twice as old, a drugdealer and the wrost thing
-      possible for Jonathan: a man.  '
+    text: ' The kid used to ask me advices about <color=#dd0000>Arthur</color>...
+      They did liked each other, but look at scenario: He''s twice as old, a drugdealer
+      and the wrost thing possible for <color=#dd0000>Jonathan</color>: a man. '
     objectWithEffects: []
     leads:
     - {fileID: 6912868731924998915, guid: c81b7b50b5aafa2438f6758cbfca3dfd, type: 3}
@@ -1009,13 +1010,14 @@ MonoBehaviour:
     leads: []
   - e1: 4
     e2: 5
-    text: Hmm? So what?
+    text: Yes... I got it from <color=#dd0000>Arthur</color>... But there was a reason
+      for it.
     objectWithEffects: []
     leads: []
   - e1: 4
     e2: 6
-    text: 'No, he was related to Arthur but he never gave it to him. I respected
-      that in a weird way.  '
+    text: ' No, he was related to <color=#dd0000>Arthur</color> but he never gave
+      it to him. I respected that in a weird way. '
     objectWithEffects: []
     leads: []
   - e1: 5

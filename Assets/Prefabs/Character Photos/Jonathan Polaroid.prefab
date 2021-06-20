@@ -485,7 +485,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &994748900491168102
 RectTransform:
   m_ObjectHideFlags: 0
@@ -755,8 +755,9 @@ MonoBehaviour:
     leads: []
   - e1: 0
     e2: 6
-    text: She is so annoying not even George liked spending time with her. It was
-      my wife who befriend with her, but I never understood that.
+    text: She is so annoying not even <color=#dd0000>George</color> liked spending
+      time with her. It was my wife Ana, who befriend with her, but I never understood
+      that.
     objectWithEffects: []
     leads: []
   - e1: 1
@@ -771,10 +772,10 @@ MonoBehaviour:
     leads: []
   - e1: 1
     e2: 3
-    text: We studied together in high school and we all stopped to hang out after
-      that. They are not close or anything, pretty sure about that, but I have seen
-      <color=#dd0000>Mark</color> going out of his house someday, no idea what he
-      was doing there.
+    text: The three of us studied together in high school and we all stopped to hang
+      out after that. They are not close or anything, pretty sure about that, but
+      I have seen <color=#dd0000>Mark</color> going out of his house someday, no
+      idea what he was doing there.
     objectWithEffects: []
     leads: []
   - e1: 1
@@ -802,7 +803,7 @@ MonoBehaviour:
   - e1: 2
     e2: 3
     text: "We were close in high school, the three of us - counting my wife. Things
-      didn't go well for both of us were attracted to Ana. She ended up choosing
+      didn't go well since both of us were attracted to Ana. She ended up choosing
       me\u2026 as you can see. We got married and over the years I've noticed how
       he never got over that. He still doesn't treat me like he used to."
     objectWithEffects: []
@@ -841,7 +842,7 @@ MonoBehaviour:
     leads: []
   - e1: 3
     e2: 5
-    text: 'I don''t know anything about that. '
+    text: 'He was very against it in highschool. That''s the only thing I know. '
     objectWithEffects: []
     leads: []
   - e1: 3
@@ -863,7 +864,7 @@ MonoBehaviour:
     leads: []
   - e1: 5
     e2: 6
-    text: 'Jeezz. He was a kid. '
+    text: Jeezz. He was a kid, why would he need that?
     objectWithEffects: []
     leads: []
 --- !u!1 &994748901364410345
@@ -1012,6 +1013,7 @@ GameObject:
   - component: {fileID: 3552643082994374076}
   - component: {fileID: 332647088827824255}
   - component: {fileID: 9030288136267813801}
+  - component: {fileID: 1766314999}
   m_Layer: 8
   m_Name: Polaroid
   m_TagString: Untagged
@@ -1076,6 +1078,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1766314999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178774224661600282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0ae943767793948b311cac9eee98fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleTo: 1.05
 --- !u!1 &3494916961003145478
 GameObject:
   m_ObjectHideFlags: 0

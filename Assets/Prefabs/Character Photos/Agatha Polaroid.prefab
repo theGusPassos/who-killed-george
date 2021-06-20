@@ -540,7 +540,7 @@ MonoBehaviour:
     leads: []
   - e1: 1
     e2: 5
-    text: "Hmm\u2026 I don't know. "
+    text: "Hmm\u2026 I don't know anything about that. "
     objectWithEffects: []
     leads: []
   - e1: 1
@@ -559,7 +559,7 @@ MonoBehaviour:
       for me to hit the grocery store. I can't imagine how it would be if they didn't
       have open that one across the street\u2026 The way my legs hurt aft- well,
       ok. About them, they were in love with Ana in that time. I wish she had chosen
-      Mark. "
+      <color=#dd0000>Mark</color>. "
     objectWithEffects: []
     leads: []
   - e1: 2
@@ -577,9 +577,12 @@ MonoBehaviour:
     leads: []
   - e1: 2
     e2: 6
-    text: "Jonathan was abusive towards his family\u2026 Poor George, poor Ana.  "
+    text: "<color=#dd0000>Jonathan</color> was abusive towards his family\u2026 Poor
+      <color=#dd0000>George</color>, poor Ana. I really wish <color=#dd0000>Mark</color>
+      was <color=#dd0000>George's</color> father.  "
     objectWithEffects: []
-    leads: []
+    leads:
+    - {fileID: 7886612481408476685, guid: 9c55eccd4923b754d9082e1a9dd5af63, type: 3}
   - e1: 3
     e2: 4
     text: 'I don''t believe someone as kind and precious as him would do such thing. '
@@ -592,9 +595,9 @@ MonoBehaviour:
     leads: []
   - e1: 3
     e2: 6
-    text: 'He treated George as his own kid, I remember seeing them playing together.
-      They loved strategizing plans to do things unseen, just like ninjas as George
-      used to say. '
+    text: ' He treated <color=#dd0000>George</color> as his own kid, I remember seeing
+      them playing together. They loved strategizing plans to do things unseen, just
+      like ninjas as <color=#dd0000>George</color> used to say.'
     objectWithEffects: []
     leads: []
   - e1: 4

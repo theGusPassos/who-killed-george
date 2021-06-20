@@ -102,14 +102,14 @@ MonoBehaviour:
   - e1: 1
     e2: 4
     text: "That was a pain in the ass, caused me so many troubles. Kinda work with
-      different goods now, you know? Something like... Ah, <color=#dd0000>with documents</color>\u2026 "
+      different goods now, you know? Something like... Ah, with <color=#dd0000>documents</color>\u2026 "
     objectWithEffects: []
     leads:
     - {fileID: 5827533725315211318, guid: 7a7eaea5ab0c9524eb1039db8905a917, type: 3}
   - e1: 1
     e2: 5
-    text: 'So... Do we really need to talk ''bout it? I don''t wanna go to jail,
-      you know? I''ve just agreed to talk to you ''cause you''re not a cop or anything '
+    text: So... Do we really need to talk 'bout it? I don't wanna go to jail, you
+      know? I've just agreed to talk to you 'cause you're not a cop or anything.
     objectWithEffects: []
     leads: []
   - e1: 1
@@ -164,8 +164,7 @@ MonoBehaviour:
     leads: []
   - e1: 4
     e2: 5
-    text: Well I used to work with <color=#dd0000>drugs</color> but now I only work
-      with <color=#dd0000>documents</color>.
+    text: "Don't you dare... He would never do that. I mean, not that I would know\u2026 "
     objectWithEffects: []
     leads: []
   - e1: 4
